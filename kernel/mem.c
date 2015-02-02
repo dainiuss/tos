@@ -12,7 +12,7 @@ void poke_b (MEM_ADDR addr, BYTE value)
 void poke_w (MEM_ADDR addr, WORD value)
 {
 	WORD ch = value;
-	WORD *ptr = (WORD*) addr;
+	WORD*ptr = (WORD*) addr;
 	*ptr = ch;
 }
 

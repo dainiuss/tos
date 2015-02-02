@@ -1,26 +1,53 @@
-
 #include <kernel.h>
 
+#define BASE_ADDRESS  0xB8000
+#define SCREEN_WIDTH  80
+#define SCREEN_HEIGHT 25
 
+WORD default_color = 0x0f;
+WORD default_color_exclusive = 0x0f00;
+
+
+void poke_to_screen(int x, int y, WORD ch)
+{
+	MEM_ADDR addr = BASE_ADDRESS + 2 * SCREEN_WIDTH * y + 2 * x;
+	poke_w(addr, ch);
+}
+
+
+WORD peek_from_screen(int x, int y)
+{
+	MEM_ADDR addr = BASE_ADDRESS + 2 * SCREEN_WIDTH * y + 2 * x;
+	return peek_w(addr);
+}
 
 
 void move_cursor(WINDOW* wnd, int x, int y)
 {
+	assert(x < wnd->width && y < wnd->height);
+	wnd->cursor_x = x;
+	wnd->cursor_y = y;
 }
 
 
 void remove_cursor(WINDOW* wnd)
 {
+	WORD empty_char = 32;
+	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, empty_char);
 }
 
 
 void show_cursor(WINDOW* wnd)
 {
+	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, wnd->cursor_char | default_color_exclusive);
 }
 
 
 void clear_window(WINDOW* wnd)
 {
+
+
+
 }
 
 
