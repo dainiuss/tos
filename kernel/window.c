@@ -45,9 +45,21 @@ void show_cursor(WINDOW* wnd)
 
 void clear_window(WINDOW* wnd)
 {
-
-
-
+	int x;
+	int y;
+	int window_x;
+	int window_y;
+	for(x=0; x < wnd->width; x++) {
+		window_x = x + wnd->x;
+		for(y=0; y < wnd->height; y++) {
+			window_y = y + wnd->y;
+			poke_to_screen(window_x, window_y, 0);
+		}
+	}
+	// Reset the cursor
+	wnd->cursor_x = 0;
+	wnd->cursor_y = 0;
+	show_cursor(wnd);
 }
 
 
