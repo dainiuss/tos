@@ -30,59 +30,59 @@
 00000000000i[     ]   SB16 support: yes
 00000000000i[     ]   USB support: yes
 00000000000i[     ]   VGA extension support: vbe 
-00000000000i[MEM0 ] allocated memory at 0x7fd7e5116010. after alignment, vector=0x7fd7e5117000
+00000000000i[MEM0 ] allocated memory at 0x7fa5f9ce8010. after alignment, vector=0x7fa5f9ce9000
 00000000000i[MEM0 ] 8.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=8
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
 00000000000i[MEM0 ] rom at 0xc0000/41472 ('/usr/share/bochs/VGABIOS-lgpl-latest')
-00000000000i[     ] lt_dlhandle is 0x2b62d10
+00000000000i[     ] lt_dlhandle is 0x3936d10
 00000000000i[PLGIN] loaded plugin libbx_cmos.so
-00000000000i[     ] lt_dlhandle is 0x2b63730
+00000000000i[     ] lt_dlhandle is 0x3937730
 00000000000i[PLGIN] loaded plugin libbx_dma.so
-00000000000i[     ] lt_dlhandle is 0x2b64190
+00000000000i[     ] lt_dlhandle is 0x3938190
 00000000000i[PLGIN] loaded plugin libbx_pic.so
-00000000000i[     ] lt_dlhandle is 0x2b649d0
+00000000000i[     ] lt_dlhandle is 0x39389d0
 00000000000i[PLGIN] loaded plugin libbx_pit.so
-00000000000i[     ] lt_dlhandle is 0x2b65340
+00000000000i[     ] lt_dlhandle is 0x3939340
 00000000000i[PLGIN] loaded plugin libbx_vga.so
-00000000000i[     ] lt_dlhandle is 0x2b65aa0
+00000000000i[     ] lt_dlhandle is 0x3939aa0
 00000000000i[PLGIN] loaded plugin libbx_hdimage.so
-00000000000i[     ] lt_dlhandle is 0x2b663a0
+00000000000i[     ] lt_dlhandle is 0x393a3a0
 00000000000i[PLGIN] loaded plugin libbx_floppy.so
-00000000000i[     ] lt_dlhandle is 0x2b66f60
+00000000000i[     ] lt_dlhandle is 0x393af60
 00000000000i[PLGIN] loaded plugin libbx_soundmod.so
-00000000000i[     ] lt_dlhandle is 0x2b67810
+00000000000i[     ] lt_dlhandle is 0x393b810
 00000000000i[PLGIN] loaded plugin libbx_pci.so
-00000000000i[     ] lt_dlhandle is 0x2b683d0
+00000000000i[     ] lt_dlhandle is 0x393c3d0
 00000000000i[PLGIN] loaded plugin libbx_pci2isa.so
-00000000000i[     ] lt_dlhandle is 0x2b68d10
+00000000000i[     ] lt_dlhandle is 0x393cd10
 00000000000i[PLGIN] loaded plugin libbx_usb_common.so
-00000000000i[     ] lt_dlhandle is 0x2b695b0
+00000000000i[     ] lt_dlhandle is 0x393d5b0
 00000000000i[PLGIN] loaded plugin libbx_unmapped.so
-00000000000i[     ] lt_dlhandle is 0x2b69e30
+00000000000i[     ] lt_dlhandle is 0x393de30
 00000000000i[PLGIN] loaded plugin libbx_biosdev.so
-00000000000i[     ] lt_dlhandle is 0x2b6a800
+00000000000i[     ] lt_dlhandle is 0x393e800
 00000000000i[PLGIN] loaded plugin libbx_speaker.so
-00000000000i[     ] lt_dlhandle is 0x2b6af90
+00000000000i[     ] lt_dlhandle is 0x393ef90
 00000000000i[PLGIN] loaded plugin libbx_extfpuirq.so
-00000000000i[     ] lt_dlhandle is 0x2b6b810
+00000000000i[     ] lt_dlhandle is 0x393f810
 00000000000i[PLGIN] loaded plugin libbx_gameport.so
-00000000000i[     ] lt_dlhandle is 0x2b6c1a0
+00000000000i[     ] lt_dlhandle is 0x39401a0
 00000000000i[PLGIN] loaded plugin libbx_pci_ide.so
-00000000000i[     ] lt_dlhandle is 0x2b6cb80
+00000000000i[     ] lt_dlhandle is 0x3940b80
 00000000000i[PLGIN] loaded plugin libbx_acpi.so
-00000000000i[     ] lt_dlhandle is 0x2b6d4c0
+00000000000i[     ] lt_dlhandle is 0x39414c0
 00000000000i[PLGIN] loaded plugin libbx_ioapic.so
-00000000000i[     ] lt_dlhandle is 0x2b6de70
+00000000000i[     ] lt_dlhandle is 0x3941e70
 00000000000i[PLGIN] loaded plugin libbx_keyboard.so
-00000000000i[     ] lt_dlhandle is 0x2b6e680
+00000000000i[     ] lt_dlhandle is 0x3942680
 00000000000i[PLGIN] loaded plugin libbx_harddrv.so
-00000000000i[     ] lt_dlhandle is 0x2b80760
+00000000000i[     ] lt_dlhandle is 0x3954760
 00000000000i[PLGIN] loaded plugin libbx_serial.so
-00000000000i[     ] lt_dlhandle is 0x2b815e0
+00000000000i[     ] lt_dlhandle is 0x39555e0
 00000000000i[PLGIN] loaded plugin libbx_parallel.so
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Sun Feb  1 23:08:57 2015 (time0=1422860937)
+00000000000i[CMOS ] Setting initial clock to: Wed Feb  4 21:35:57 2015 (time0=1423114557)
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[DMA  ] channel 2 used by Floppy Drive
 00000000000i[FDD  ] fd0: 'image/disk_image' ro=0, h=2,t=80,spt=18
@@ -196,63 +196,63 @@
 00001910395i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
 00001911119i[BIOS ] bios_table_cur_addr: 0x000fbb54
 00032315751i[BIOS ] Booting from 0000:7c00
-00064751815i[SER  ]  -- COM 2 : read byte [48]
-00064785145i[SER  ]  -- COM 2 : read byte [48]
-00064818475i[SER  ]  -- COM 2 : read byte [48]
-00064851805i[SER  ]  -- COM 2 : read byte [49]
-00064885135i[SER  ]  -- COM 2 : read byte [48]
-00064918465i[SER  ]  -- COM 2 : read byte [48]
-00064951795i[SER  ]  -- COM 2 : read byte [48]
-00064985125i[SER  ]  -- COM 2 : read byte [48]
-00065018455i[SER  ]  -- COM 2 : read byte [48]
-00065051785i[SER  ]  -- COM 2 : read byte [48]
-00065085115i[SER  ]  -- COM 2 : read byte [48]
-00065118445i[SER  ]  -- COM 2 : read byte [48]
-00065151775i[SER  ]  -- COM 2 : read byte [48]
-00065185105i[SER  ]  -- COM 2 : read byte [48]
-00065218435i[SER  ]  -- COM 2 : read byte [48]
-00065251765i[SER  ]  -- COM 2 : read byte [48]
-00065285095i[SER  ]  -- COM 2 : read byte [48]
-00065318425i[SER  ]  -- COM 2 : read byte [48]
-00065351755i[SER  ]  -- COM 2 : read byte [48]
-00065385085i[SER  ]  -- COM 2 : read byte [48]
-00065418415i[SER  ]  -- COM 2 : read byte [48]
-00065451745i[SER  ]  -- COM 2 : read byte [48]
-00065485075i[SER  ]  -- COM 2 : read byte [48]
-00065518405i[SER  ]  -- COM 2 : read byte [48]
-00065551735i[SER  ]  -- COM 2 : read byte [48]
-00065585065i[SER  ]  -- COM 2 : read byte [48]
-00065618395i[SER  ]  -- COM 2 : read byte [48]
-00065651725i[SER  ]  -- COM 2 : read byte [48]
-00065685055i[SER  ]  -- COM 2 : read byte [10]
-00501000000p[SDL  ] >>PANIC<< User requested shutdown.
-00501000000i[CPU0 ] CPU is in protected mode (active)
-00501000000i[CPU0 ] CS.d_b = 32 bit
-00501000000i[CPU0 ] SS.d_b = 32 bit
-00501000000i[CPU0 ] EFER   = 0x00000000
-00501000000i[CPU0 ] | RAX=000000000000000a  RBX=000000000009ff4c
-00501000000i[CPU0 ] | RCX=000000000009ff17  RDX=00000000000002f8
-00501000000i[CPU0 ] | RSP=000000000009ff2c  RBP=0000000000000000
-00501000000i[CPU0 ] | RSI=0000000000000031  RDI=000000000009ffd4
-00501000000i[CPU0 ] |  R8=0000000000000000   R9=0000000000000000
-00501000000i[CPU0 ] | R10=0000000000000000  R11=0000000000000000
-00501000000i[CPU0 ] | R12=0000000000000000  R13=0000000000000000
-00501000000i[CPU0 ] | R14=0000000000000000  R15=0000000000000000
-00501000000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf AF PF cf
-00501000000i[CPU0 ] | SEG selector     base    limit G D
-00501000000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
-00501000000i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
-00501000000i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00501000000i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00501000000i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00501000000i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00501000000i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00501000000i[CPU0 ] |  MSR_FS_BASE:0000000000000000
-00501000000i[CPU0 ] |  MSR_GS_BASE:0000000000000000
-00501000000i[CPU0 ] | RIP=0000000000005d67 (0000000000005d67)
-00501000000i[CPU0 ] | CR0=0x60000011 CR2=0x0000000000000000
-00501000000i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
-00501000000i[CPU0 ] 0x0000000000005d67>> jmp .-2 (0x00005d67) : EBFE
-00501000000i[CMOS ] Last time is 1422860987 (Sun Feb  1 23:09:47 2015)
-00501000000i[     ] restoring default signal behavior
-00501000000i[CTRL ] quit_sim called with exit code 1
+00065301068i[SER  ]  -- COM 2 : read byte [48]
+00065334398i[SER  ]  -- COM 2 : read byte [49]
+00065367728i[SER  ]  -- COM 2 : read byte [49]
+00065401058i[SER  ]  -- COM 2 : read byte [49]
+00065434388i[SER  ]  -- COM 2 : read byte [49]
+00065467718i[SER  ]  -- COM 2 : read byte [48]
+00065501048i[SER  ]  -- COM 2 : read byte [48]
+00065534378i[SER  ]  -- COM 2 : read byte [48]
+00065567708i[SER  ]  -- COM 2 : read byte [48]
+00065601038i[SER  ]  -- COM 2 : read byte [48]
+00065634368i[SER  ]  -- COM 2 : read byte [48]
+00065667698i[SER  ]  -- COM 2 : read byte [48]
+00065701028i[SER  ]  -- COM 2 : read byte [48]
+00065734358i[SER  ]  -- COM 2 : read byte [48]
+00065767688i[SER  ]  -- COM 2 : read byte [48]
+00065801018i[SER  ]  -- COM 2 : read byte [48]
+00065834348i[SER  ]  -- COM 2 : read byte [48]
+00065867678i[SER  ]  -- COM 2 : read byte [48]
+00065901008i[SER  ]  -- COM 2 : read byte [48]
+00065934338i[SER  ]  -- COM 2 : read byte [48]
+00065967668i[SER  ]  -- COM 2 : read byte [48]
+00066000998i[SER  ]  -- COM 2 : read byte [48]
+00066034328i[SER  ]  -- COM 2 : read byte [48]
+00066067658i[SER  ]  -- COM 2 : read byte [48]
+00066100988i[SER  ]  -- COM 2 : read byte [48]
+00066134318i[SER  ]  -- COM 2 : read byte [48]
+00066167648i[SER  ]  -- COM 2 : read byte [48]
+00066200978i[SER  ]  -- COM 2 : read byte [48]
+00066234308i[SER  ]  -- COM 2 : read byte [10]
+00825380000p[SDL  ] >>PANIC<< User requested shutdown.
+00825380000i[CPU0 ] CPU is in protected mode (active)
+00825380000i[CPU0 ] CS.d_b = 32 bit
+00825380000i[CPU0 ] SS.d_b = 32 bit
+00825380000i[CPU0 ] EFER   = 0x00000000
+00825380000i[CPU0 ] | RAX=000000000000000a  RBX=000000000000001c
+00825380000i[CPU0 ] | RCX=0000000000090020  RDX=00000000000002f8
+00825380000i[CPU0 ] | RSP=000000000009ffe4  RBP=0000000000000000
+00825380000i[CPU0 ] | RSI=0000000000000004  RDI=00000000000010bc
+00825380000i[CPU0 ] |  R8=0000000000000000   R9=0000000000000000
+00825380000i[CPU0 ] | R10=0000000000000000  R11=0000000000000000
+00825380000i[CPU0 ] | R12=0000000000000000  R13=0000000000000000
+00825380000i[CPU0 ] | R14=0000000000000000  R15=0000000000000000
+00825380000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af pf cf
+00825380000i[CPU0 ] | SEG selector     base    limit G D
+00825380000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00825380000i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00825380000i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00825380000i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00825380000i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00825380000i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00825380000i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00825380000i[CPU0 ] |  MSR_FS_BASE:0000000000000000
+00825380000i[CPU0 ] |  MSR_GS_BASE:0000000000000000
+00825380000i[CPU0 ] | RIP=0000000000005db4 (0000000000005db4)
+00825380000i[CPU0 ] | CR0=0x60000011 CR2=0x0000000000000000
+00825380000i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
+00825380000i[CPU0 ] 0x0000000000005db4>> jmp .-2 (0x00005db4) : EBFE
+00825380000i[CMOS ] Last time is 1423114639 (Wed Feb  4 21:37:19 2015)
+00825380000i[     ] restoring default signal behavior
+00825380000i[CTRL ] quit_sim called with exit code 1

@@ -21,8 +21,29 @@ WORD peek_from_screen(int x, int y)
 	return peek_w(addr);
 }
 
+void scroll_window(WINDOW *wnd)
+{
+	int x, y;
+	int wx, wy;
 
-void move_cursor(WINDOW* wnd, int x, int y)
+	for(y=0; y < wnd->height - 1; y++){
+		wy = wnd->y + y;
+		for(x=0 ; x < wnd->width; x++){
+			wx = wnd->x + x;
+			WORD ch = peek_from_screen(wx, wy + 1);
+			poke_to_screen(wx, wy, ch);
+		}
+	}
+	wy = wnd->y + wnd->height - 1;
+	for(x=0; x < wnd->width; x++){
+		wx = wnd->x + x;
+		poke_to_screen(wx, wy, 0);
+	}
+	wnd->cursor_x = 0;
+	wnd->cursor_y = wnd->height - 1;
+}
+
+void move_cursor(WINDOW *wnd, int x, int y)
 {
 	assert(x < wnd->width && y < wnd->height);
 	wnd->cursor_x = x;
@@ -30,20 +51,20 @@ void move_cursor(WINDOW* wnd, int x, int y)
 }
 
 
-void remove_cursor(WINDOW* wnd)
+void remove_cursor(WINDOW *wnd)
 {
 	WORD empty_char = 32;
 	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, empty_char);
 }
 
 
-void show_cursor(WINDOW* wnd)
+void show_cursor(WINDOW *wnd)
 {
 	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, wnd->cursor_char | default_color_exclusive);
 }
 
 
-void clear_window(WINDOW* wnd)
+void clear_window(WINDOW *wnd)
 {
 	int x;
 	int y;
@@ -63,14 +84,47 @@ void clear_window(WINDOW* wnd)
 }
 
 
-void output_char(WINDOW* wnd, unsigned char c)
+void output_char(WINDOW *wnd, unsigned char c)
 {
+	remove_cursor(wnd);
+	switch(c) {
+		case '\n':
+		case 13:
+			wnd->cursor_x = 0;
+			wnd->cursor_y++;
+			break;
+		case '\b':
+			if(wnd->cursor_x == 0 && wnd->cursor_y !=0){
+				wnd->cursor_x = wnd->width - 1;
+				wnd->cursor_y--;
+			}
+			else if(wnd->cursor_x != 0 && wnd->cursor_y !=0) {
+				wnd->cursor_x--;
+			}
+			break;
+		default:
+			poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y,
+						   (short unsigned int) c | default_color_exclusive);
+			wnd->cursor_x++;
+			if(wnd->cursor_x == wnd->width){
+				wnd->cursor_x = 0;
+				wnd->cursor_y++;
+			}
+			break;
+	}
+	if(wnd->cursor_y == wnd->height) {
+		scroll_window(wnd);
+	}
+	show_cursor(wnd);
 }
 
 
 
-void output_string(WINDOW* wnd, const char *str)
+void output_string(WINDOW *wnd, const char *str)
 {
+	while(*str != '\0'){
+		output_char(wnd, *str++);
+	}
 }
 
 
