@@ -60,7 +60,7 @@ void remove_cursor(WINDOW *wnd)
 
 void show_cursor(WINDOW *wnd)
 {
-	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, wnd->cursor_char | default_color_exclusive);
+	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, wnd->cursor_char | (default_color << 8));
 }
 
 
@@ -71,9 +71,9 @@ void clear_window(WINDOW *wnd)
 	int window_x;
 	int window_y;
 	for(x=0; x < wnd->width; x++) {
-		window_x = x + wnd->x;
+		window_x = wnd->x + x;
 		for(y=0; y < wnd->height; y++) {
-			window_y = y + wnd->y;
+			window_y = wnd->y + y;
 			poke_to_screen(window_x, window_y, 0);
 		}
 	}
