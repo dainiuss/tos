@@ -1,6 +1,10 @@
 
 #include <kernel.h>
 
+//poke_b(0xB8000, 'A');
+//poke_b(0xB8001, 0x0F);
+//or
+//poke_w(0xB8000, 'A' | 0x0F00);
 
 void poke_b (MEM_ADDR addr, BYTE value)
 {
