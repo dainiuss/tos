@@ -4,6 +4,7 @@
 #include "disptable.c"
 
 
+/* Always points to the process (i.e., PCB slot) that currently owns the CPU. */
 PROCESS active_proc;
 
 
@@ -92,6 +93,19 @@ void add_ready_queue (PROCESS proc)
 
 void remove_ready_queue (PROCESS proc)
 {
+	int process_priority;
+	assert(proc->magic == MAGIC_PCB);
+	process_priority = proc->priority;
+	if(proc->next == proc) {
+		/* This is the last process on this priority level */
+		ready_queue[process_priority] = NULL;
+		ready_procs &= ~(1 << process_priority);
+	}
+	else {
+		ready_queue[process_priority] = proc->next;
+		proc->next->prev              = proc->prev;
+		proc->prev->next              = proc->next;
+	}
 }
 
 
@@ -106,6 +120,20 @@ void remove_ready_queue (PROCESS proc)
 
 PROCESS dispatcher()
 {
+	PROCESS  new_process;
+	unsigned i;
+
+	/* Find queue with highest priority that is not empty */
+	i = table[ready_procs];
+	assert(i != -1);
+	if(i == active_proc->priority){
+		/* Round robin within the same priority level */
+		new_process = active_proc->next;
+	}
+	else {
+		/* Dispatch a process at a different priority level */
+		new_process = ready_queue[i];
+	}
 }
 
 
@@ -128,8 +156,21 @@ void resign()
  * init_dispatcher
  *----------------------------------------------------------------------------
  * Initializes the necessary data structures.
+ * MAX_READY_QUEUES = 8
  */
 
 void init_dispatcher()
 {
+	int i;
+
+	for(i=0; i < MAX_READY_QUEUES; i++){
+		ready_queue[i] = NULL;
+	}
+	ready_procs = 0;
+
+	/* Setup 1st process */
+	add_ready_queue(active_proc);
+
 }
+
+

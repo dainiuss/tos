@@ -5,7 +5,6 @@
 #define SCREEN_HEIGHT 25
 
 WORD default_color = 0x0f;
-WORD default_color_exclusive = 0x0f00;
 
 
 void poke_to_screen(int x, int y, WORD ch)
@@ -104,7 +103,7 @@ void output_char(WINDOW *wnd, unsigned char c)
 			break;
 		default:
 			poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y,
-						   (short unsigned int) c | default_color_exclusive);
+						   (short unsigned int) c | (default_color << 8));
 			wnd->cursor_x++;
 			if(wnd->cursor_x == wnd->width){
 				wnd->cursor_x = 0;
