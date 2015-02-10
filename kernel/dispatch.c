@@ -4,7 +4,7 @@
 #include "disptable.c"
 
 
-/* Always points to the process (i.e., PCB slot) that currently owns the CPU. */
+/* Always points to the process (i.e., PCB slot) that CPU is currently executing */
 PROCESS active_proc;
 
 
@@ -57,7 +57,7 @@ void add_ready_queue (PROCESS proc)
 	int process_priority;
 	assert(proc->magic == MAGIC_PCB);
 	process_priority = proc->priority;
-	if(ready_queue[process_priority == NULL]){
+	if(ready_queue[process_priority] == NULL){
 		/* The only process on this priority level */
 		ready_queue[process_priority] = proc;
 		proc->next = proc;
@@ -73,6 +73,7 @@ void add_ready_queue (PROCESS proc)
 	}
 	else {
 		/* Other processes are present on this priority level*/
+		/* p1=>p2=>p3=> P =>p4=>p1 */
 		proc->next = ready_queue[process_priority];
 		proc->prev = ready_queue[process_priority]->prev;
 		ready_queue[process_priority]->prev->next = proc;
@@ -102,6 +103,7 @@ void remove_ready_queue (PROCESS proc)
 		ready_procs &= ~(1 << process_priority);
 	}
 	else {
+		/* p1=>p2=>p3=> P =>p4=>p1 */
 		ready_queue[process_priority] = proc->next;
 		proc->next->prev              = proc->prev;
 		proc->prev->next              = proc->next;
