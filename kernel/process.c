@@ -28,6 +28,25 @@ PORT create_process (void (*ptr_to_new_proc) (PROCESS, PARAM),
 	/* Start at 640kB and go down, 30kB for each process stack */
 	esp = 640 * 1024 - (new_process - pcb) * 30 * 1024;
 
+
+#define PUSH(x)   esp -= 4; poke_l(esp, (LONG) x);
+
+	/* Initialize the stack for the new process */
+	PUSH(param);           /* First data */
+	PUSH(new_process);     /* Self */
+	PUSH(0);               /* Dummy return address */
+	PUSH(ptr_to_new_proc); /* Entry point of new process */
+	PUSH(0);			   /* EAX */
+	PUSH(0);			   /* ECX */
+	PUSH(0);			   /* EDX */
+	PUSH(0);			   /* EBX */
+	PUSH(0);			   /* EBP */
+	PUSH(0);			   /* ESI */
+	PUSH(0);			   /* EDI */
+
+#undef PUSH
+
+
 	new_process->esp = esp;
 
 	add_ready_queue(new_process);
