@@ -64,12 +64,12 @@ void add_ready_queue (PROCESS proc)
 		proc->prev = proc;
 		ready_procs |= 1 << process_priority;
 		// 00000001 << process_priority;
-		// 1 << 0  same as 1 * 2^0
-		// 1 << 1  same as 1 * 2^1
-		// 1 << 2  same as 1 * 2^2
-		// 1 << 3  same as 1 * 2^3
+		// 00000001 << 0  same as 1 * 2^0
+		// 00000001 << 1  same as 1 * 2^1 = 00000010
+		// 00000001 << 2  same as 1 * 2^2 = 00000100
+		// 00000001 << 3  same as 1 * 2^3 = 00001000
 		// ...
-		// 1 << 7  same as 1 * 2^7 = 128
+		// 00000001 << 7  same as 1 * 2^7 = 10000000
 	}
 	else {
 		/* Other processes are present on this priority level*/
@@ -136,6 +136,8 @@ PROCESS dispatcher()
 		/* Dispatch a process at a different priority level */
 		new_process = ready_queue[i];
 	}
+
+	return new_process;
 }
 
 
