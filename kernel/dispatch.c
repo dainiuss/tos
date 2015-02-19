@@ -200,26 +200,6 @@ void resign()
 	asm("popl %ecx");
 	asm("popl %eax");
 	asm("ret");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
