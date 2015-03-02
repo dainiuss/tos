@@ -13,6 +13,7 @@ PORT create_process (void (*ptr_to_new_proc) (PROCESS, PARAM),
 {
 	MEM_ADDR esp;
 	PROCESS new_process;
+	PORT new_port;
 
 	new_process = next_free_pcb;
 	next_free_pcb = new_process->next;
@@ -23,6 +24,9 @@ PORT create_process (void (*ptr_to_new_proc) (PROCESS, PARAM),
 	new_process->priority   = prio;
 	new_process->first_port = NULL;
 	new_process->name       = name;
+
+	// Add this after create_new_port() is implemented
+	new_port = create_new_port(new_process);
 
 	/* Compute linear address of new process' system stack */
 	/* Start at 640kB and go down, 30kB for each process stack */
@@ -52,7 +56,7 @@ PORT create_process (void (*ptr_to_new_proc) (PROCESS, PARAM),
 	add_ready_queue(new_process);
 
 
-	return NULL;
+	return new_port;
 }
 
 
