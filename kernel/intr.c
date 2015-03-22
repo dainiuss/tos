@@ -23,7 +23,7 @@ void load_idt (IDT* base)
     asm ("lidt %0" : "=m" (mem48));
 }
 
-
+/* Initialize entry in Interrupt Descriptor Table */
 void init_idt_entry (int intr_no, void (*isr) (void))
 {
 	idt[intr_no].offset_0_15  = (unsigned) isr & 0xffff;
@@ -137,6 +137,53 @@ void dummy_spurious_int()
 	asm("pusha;movb $0x20,%al;outb %al,$0x20;popa;iret");
 }
 
+/* Dummy ISR */
+void dummy_isr()
+{
+    /*
+     *	PUSHL	%EAX  <= Save process' context
+     *  PUSHL   %ECX
+     *  PUSHL   %EDX
+     *  PUSHL   %EBX
+     *  PUSHL   %EBP
+     *  PUSHL   %ESI
+     *  PUSHL   %EDI
+     */
+    asm("isr_keyb:");
+    asm("pushl %eax");
+    asm("pushl %ecx");
+    asm("pushl %edx");
+    asm("pushl %ebx");
+    asm("pushl %ebp");
+    asm("pushl %esi");
+    asm("pushl %edi");
+
+
+    /* -------> REACT TO THE INTERRUPT <------ */
+
+    /*
+     *	MOVB  $0x20,%AL	; Reset interrupt controller
+     *	OUTB  %AL,$0x20
+     *	POPL  %EDI      ; Restore previously saved context
+     *  POPL  %ESI
+     *  POPL  %EBP
+     *  POPL  %EBX
+     *  POPL  %EDX
+     *  POPL  %ECX
+     *  POPL  %EAX
+     *	IRET		; Return to new process
+     */
+    asm("movb $0x20,%al");
+    asm("outb %al,$0x20");
+    asm("popl %edi");
+    asm("popl %esi");
+    asm("popl %ebp");
+    asm("popl %ebx");
+    asm("popl %edx");
+    asm("popl %ecx");
+    asm("popl %eax");
+    asm("iret");
+}
 
 /*
  * Timer ISR
@@ -176,6 +223,8 @@ void dummy_isr_keyb()
     asm ("pushl %eax;pushl %ecx;pushl %edx");
     asm ("pushl %ebx;pushl %ebp;pushl %esi;pushl %edi");
 
+
+    /* -------> REACT TO THE INTERRUPT <------ */
     /* Save the context pointer ESP to the PCB */
     asm ("movl %%esp,%0" : "=m" (active_proc->esp) : );
 
@@ -196,6 +245,8 @@ void dummy_isr_keyb()
 
     /* Restore context pointer ESP */
     asm ("movl %0,%%esp" : : "m" (active_proc->esp) );
+
+    /* -------> END REACT TO THE INTERRUPT <------ */
 
     /*
      *	MOVB  $0x20,%AL	; Reset interrupt controller
@@ -258,6 +309,7 @@ void init_interrupts()
 
 	assert(sizeof(IDT) == IDT_ENTRY_SIZE);
 
+	/* Tells the CPU where IDT is located */
 	load_idt(idt);
 
 	for(i=0; i < MAX_INTERRUPTS; i++){
