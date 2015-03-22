@@ -138,52 +138,52 @@ void dummy_spurious_int()
 }
 
 /* Dummy ISR */
-void dummy_isr()
-{
-    /*
-     *	PUSHL	%EAX  <= Save process' context
-     *  PUSHL   %ECX
-     *  PUSHL   %EDX
-     *  PUSHL   %EBX
-     *  PUSHL   %EBP
-     *  PUSHL   %ESI
-     *  PUSHL   %EDI
-     */
-    asm("isr_keyb:");
-    asm("pushl %eax");
-    asm("pushl %ecx");
-    asm("pushl %edx");
-    asm("pushl %ebx");
-    asm("pushl %ebp");
-    asm("pushl %esi");
-    asm("pushl %edi");
-
-
-    /* -------> REACT TO THE INTERRUPT <------ */
-
-    /*
-     *	MOVB  $0x20,%AL	; Reset interrupt controller
-     *	OUTB  %AL,$0x20
-     *	POPL  %EDI      ; Restore previously saved context
-     *  POPL  %ESI
-     *  POPL  %EBP
-     *  POPL  %EBX
-     *  POPL  %EDX
-     *  POPL  %ECX
-     *  POPL  %EAX
-     *	IRET		; Return to new process
-     */
-    asm("movb $0x20,%al");
-    asm("outb %al,$0x20");
-    asm("popl %edi");
-    asm("popl %esi");
-    asm("popl %ebp");
-    asm("popl %ebx");
-    asm("popl %edx");
-    asm("popl %ecx");
-    asm("popl %eax");
-    asm("iret");
-}
+//void dummy_isr()
+//{
+//    /*
+//     *	PUSHL	%EAX  <= Save process' context
+//     *  PUSHL   %ECX
+//     *  PUSHL   %EDX
+//     *  PUSHL   %EBX
+//     *  PUSHL   %EBP
+//     *  PUSHL   %ESI
+//     *  PUSHL   %EDI
+//     */
+//    asm("isr_keyb:");
+//    asm("pushl %eax");
+//    asm("pushl %ecx");
+//    asm("pushl %edx");
+//    asm("pushl %ebx");
+//    asm("pushl %ebp");
+//    asm("pushl %esi");
+//    asm("pushl %edi");
+//
+//
+//    /* -------> REACT TO THE INTERRUPT <------ */
+//
+//    /*
+//     *	MOVB  $0x20,%AL	; Reset interrupt controller
+//     *	OUTB  %AL,$0x20
+//     *	POPL  %EDI      ; Restore previously saved context
+//     *  POPL  %ESI
+//     *  POPL  %EBP
+//     *  POPL  %EBX
+//     *  POPL  %EDX
+//     *  POPL  %ECX
+//     *  POPL  %EAX
+//     *	IRET		; Return to new process
+//     */
+//    asm("movb $0x20,%al");
+//    asm("outb %al,$0x20");
+//    asm("popl %edi");
+//    asm("popl %esi");
+//    asm("popl %ebp");
+//    asm("popl %ebx");
+//    asm("popl %edx");
+//    asm("popl %ecx");
+//    asm("popl %eax");
+//    asm("iret");
+//}
 
 /*
  * Timer ISR
