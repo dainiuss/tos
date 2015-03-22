@@ -14,9 +14,14 @@ PORT create_process (void (*ptr_to_new_proc) (PROCESS, PARAM),
 	MEM_ADDR esp;
 	PROCESS new_process;
 	PORT new_port;
+	volatile int flag;
+
+	DISABLE_INTR(flag);
 
 	new_process = next_free_pcb;
 	next_free_pcb = new_process->next;
+
+	ENABLE_INTR(flag);
 
 	new_process->magic      = MAGIC_PCB;
 	new_process->used       = TRUE;
@@ -39,6 +44,15 @@ PORT create_process (void (*ptr_to_new_proc) (PROCESS, PARAM),
 	PUSH(param);           /* First data */
 	PUSH(new_process);     /* Self */
 	PUSH(0);               /* Dummy return address */
+
+	if(interrupts_initialized) {
+		PUSH(512); /* EFALGS - Flags with enabled interrupts 0x200 = 512*/
+	}
+	else {
+		PUSH(0);   /* EFALGS - Flags with disabled interrupts */
+	}
+	PUSH(CODE_SELECTOR); /* CS - Kernel code selector 0x8 = 8*/
+
 	PUSH(ptr_to_new_proc); /* Entry point of new process */
 	PUSH(0);			   /* EAX */
 	PUSH(0);			   /* ECX */

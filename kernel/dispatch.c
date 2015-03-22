@@ -55,6 +55,10 @@ typedef PCB* PROCESS;
 void add_ready_queue (PROCESS proc)
 {
 	int process_priority;
+	volatile int flag;
+
+	DISABLE_INTR(flag);
+
 	assert(proc->magic == MAGIC_PCB);
 	process_priority = proc->priority;
 	if(ready_queue[process_priority] == NULL){
@@ -81,6 +85,8 @@ void add_ready_queue (PROCESS proc)
 	}
 
 	proc->state = STATE_READY;
+
+	ENABLE_INTR(flag);
 }
 
 
@@ -95,6 +101,10 @@ void add_ready_queue (PROCESS proc)
 void remove_ready_queue (PROCESS proc)
 {
 	int process_priority;
+	volatile int flag;
+
+	DISABLE_INTR(flag);
+
 	assert(proc->magic == MAGIC_PCB);
 	process_priority = proc->priority;
 	if(proc->next == proc) {
@@ -108,6 +118,8 @@ void remove_ready_queue (PROCESS proc)
 		proc->next->prev              = proc->prev;
 		proc->prev->next              = proc->next;
 	}
+
+	ENABLE_INTR(flag);
 }
 
 
@@ -124,6 +136,9 @@ PROCESS dispatcher()
 {
 	PROCESS  new_process;
 	unsigned i;
+	volatile int flag;
+
+	DISABLE_INTR(flag);
 
 	/* Find queue with highest priority that is not empty */
 	i = table[ready_procs];
@@ -137,6 +152,7 @@ PROCESS dispatcher()
 		new_process = ready_queue[i];
 	}
 
+	ENABLE_INTR(flag);
 	return new_process;
 }
 
@@ -152,9 +168,16 @@ PROCESS dispatcher()
  */
 void resign()
 {
-	/* Saving process context
+	/*
+	 *  -------
+	 *  PUSHFL				 ; Push EFALGS
+	 *  CLI					 ; Disable interrupts
+	 *  POPL    %EAX         ; EAX = EFLAGS
+	 *  XCHGL   (%ESP),%EAX  ; Swap return address with EFLAGS, EAX now contains return address
+	 *  PUSH    %CS          ; Push CS
+	 *  -------
 	 *
-	 *  PUSHL	%EAX
+	 *  PUSHL	%EAX          ; Saving process context
 	 *  PUSHL   %ECX
 	 *  PUSHL   %EDX
 	 *  PUSHL   %EBX
@@ -162,6 +185,13 @@ void resign()
 	 *  PUSHL   %ESI
 	 *  PUSHL   %EDI
 	 */
+
+	asm("pushfl");
+	asm("cli");
+	asm("popl %eax");
+	asm("xchgl (%esp),%eax");
+	asm("push %cs");
+	asm("pushl %eax");
 
 	asm("pushl %eax");
 	asm("pushl %ecx");
@@ -189,7 +219,7 @@ void resign()
 	 * POPL %EDX
 	 * POPL %ECX
 	 * POPL %EAX
-	 * RET            <= Return to new process
+	 * IRET            <= Return to new process
 	 */
 
 	asm("popl %edi");
@@ -199,7 +229,7 @@ void resign()
 	asm("popl %edx");
 	asm("popl %ecx");
 	asm("popl %eax");
-	asm("ret");
+	asm("iret");
 }
 
 
