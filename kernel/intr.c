@@ -42,7 +42,7 @@ void fatal_exception(int n)
 	WINDOW error_window = {0, 24, 80, 1, 0, 0, ' '};
 
 	wprintf(&error_window, "Fatal exception %d (%s)", n, active_proc->name);
-	while(1);
+	while(42);
 }
 
 void exception0()
@@ -214,6 +214,17 @@ void dummy_isr_timer ()
 	/* Save context pointer ESP to the PCB */
 	asm("movl %%esp,%0" : "=m" (active_proc->esp) : );
 
+
+	/*
+	 * If a process is waiting for this interrupt, then put it back
+	 * to the ready queue.
+	 */
+	p = interrupt_table[TIMER_IRQ];
+	if(p && p->state == STATE_INTR_BLOCKED){
+		/* Add event handler to ready queue */
+		add_ready_queue(p);
+	}
+
 	/* Dispatch new process */
 	active_proc = dispatcher();
 
@@ -234,8 +245,7 @@ void dummy_isr_timer ()
 	 *
 	 */
 
-	asm("movb $0x20,%al");
-	asm("outb %al,$0x20");
+	asm("movb $0x20,%al;outb %al,$0x20");
 	asm("popl %edi");
 	asm("popl %esi");
 	asm("popl %ebp");
@@ -319,8 +329,30 @@ void dummy_isr_keyb()
     asm ("iret");
 }
 
+/*
+ * Let the process run without worrying about the details
+ * of the underlying ISR
+ */
 void wait_for_interrupt (int intr_no)
 {
+	volatile int flag;
+
+	DISABLE_INTR(flag);
+
+	if(interrupt_table[intr_no] != NULL){
+		panic("wait for interrupt(): ISR busy");
+	}
+	interrupt_table[intr_no] = active_proc;
+
+	remove_ready_queue(active_proc);
+
+	active_proc->state = STATE_INTR_BLOCKED;
+
+	resign();
+
+	interrupt_table[intr_no] = NULL;
+
+	ENABLE_INTR(flag);
 }
 
 
@@ -389,6 +421,10 @@ void init_interrupts()
 	init_idt_entry(TIMER_IRQ, isr_timer);
 
 	re_program_interrupt_controller();
+
+	for(i=0; i < MAX_INTERRUPTS; i++){
+		interrupt_table[i] = NULL;
+	}
 
 	interrupts_initialized = TRUE; /* poke 512 for EFLAGS */
 	asm("sti");
