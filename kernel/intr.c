@@ -294,11 +294,11 @@ void dummy_isr_keyb()
     p = interrupt_table[KEYB_IRQ];
 
     if (p == NULL) {
-	panic ("service_intr_0x61: Spurious interrupt");
+    	panic ("service_intr_0x61: Spurious interrupt");
     }
 
     if (p->state != STATE_INTR_BLOCKED) {
-	panic ("service_intr_0x61: No process waiting");
+    	panic ("service_intr_0x61: No process waiting");
     }
 
     /* Add event handler to ready queue */
@@ -419,6 +419,7 @@ void init_interrupts()
 	init_idt_entry(15, exception15);
 	init_idt_entry(16, exception16);
 	init_idt_entry(TIMER_IRQ, isr_timer);
+	init_idt_entry(KEYB_IRQ, isr_keyb);
 
 	re_program_interrupt_controller();
 
