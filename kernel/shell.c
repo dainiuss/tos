@@ -7,15 +7,39 @@ WINDOW shell_wnd = {0, 9, SHELL_WND_WIDTH, 16, 0, 0, 0xDC};
 void run_command(char* buffer, int cmd)
 {
 
-	wprintf(&shell_wnd, "\n%d\n", cmd);
+	wprintf(&shell_wnd, "\n");
 
-	while (*buffer != '\0') {
-		wprintf(&shell_wnd, "%c", *buffer);
-		buffer++;
+	if(strings_equal(buffer, "")) {
+		return;
+	}
+	if(strings_equal(buffer, "help")) {
+		wprintf(&shell_wnd, "Available commands:\n");
+		wprintf(&shell_wnd, "clear  =>   Clear window\n");
+		wprintf(&shell_wnd, "ps     =>   Print process table\n");
+		wprintf(&shell_wnd, "help   =>   Print list of all commands\n");
+		return;
+	}
+	if(strings_equal(buffer, "clear")) {
+		clear_window(&shell_wnd);
+		return;
+	}
+	if(strings_equal(buffer, "ps")) {
+		print_all_processes(&shell_wnd);
+		return;
 	}
 
+	output_string(&shell_wnd, buffer);
+	wprintf(&shell_wnd, ": command not found. Type 'help' for help.");
 	wprintf(&shell_wnd, "\n");
 	return;
+}
+
+void shell_header()
+{
+	wprintf(&shell_wnd, "-------------------------------------------------------------");
+	wprintf(&shell_wnd, "------------------------- TOS SHELL -------------------------");
+	wprintf(&shell_wnd, "-------------------------------------------------------------");
+
 }
 
 void shell_prompt()
@@ -33,6 +57,7 @@ void shell_process(PROCESS self, PARAM param)
 	char ch;
 	Keyb_Message msg;
 
+	shell_header();
 	while (1) {
 		execute_command = FALSE;
 		number_of_chars = 0;
