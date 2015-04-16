@@ -264,6 +264,65 @@ void dummy_isr_timer ()
 void isr_com1 ();
 void dummy_isr_com1 ()
 {
+    /*
+     *	PUSHL	%EAX	; Save process' context
+     *  PUSHL   %ECX
+     *  PUSHL   %EDX
+     *  PUSHL   %EBX
+     *  PUSHL   %EBP
+     *  PUSHL   %ESI
+     *  PUSHL   %EDI
+     */
+	asm("isr_com1:");
+	asm("pushl %eax");
+	asm("pushl %ecx");
+	asm("pushl %edx");
+	asm("pushl %ebx");
+	asm("pushl %ebp");
+	asm("pushl %esi");
+	asm("pushl %edi");
+
+	if((p = interrupt_table[COM1_IRQ]) == NULL){
+		panic("service_intr_0x64: Spurious interrupt");
+	}
+	if(p->state != STATE_INTR_BLOCKED){
+		panic("service_intr_0x64: No process waiting");
+	}
+
+	/* Save context pointer ESP to the PCB */
+	asm("movl %%esp,%0" : "=m" (active_proc->esp) : );
+
+	/* Add event handler to ready queue */
+	add_ready_queue(p);
+
+	/* Dispatch new process */
+	active_proc = dispatcher();
+
+	/* Restore context pointer ESP */
+	asm("movl %0,%%esp" : : "m" (active_proc->esp) );
+
+    /*
+     *	MOVB  $0x20,%AL	; Reset interrupt controller
+     *	OUTB  %AL,$0x20
+     *	POPL  %EDI      ; Restore previously saved context
+     *  POPL  %ESI
+     *  POPL  %EBP
+     *  POPL  %EBX
+     *  POPL  %EDX
+     *  POPL  %ECX
+     *  POPL  %EAX
+     *	IRET		; Return to new process
+     */
+
+	asm("movb $0x20,%al;outb %al,$0x20");
+	asm("popl %edi");
+	asm("popl %esi");
+	asm("popl %ebp");
+	asm("popl %ebx");
+	asm("popl %edx");
+	asm("popl %ecx");
+	asm("popl %eax");
+	asm("iret");
 }
 
 
@@ -420,6 +479,7 @@ void init_interrupts()
 	init_idt_entry(16, exception16);
 	init_idt_entry(TIMER_IRQ, isr_timer);
 	init_idt_entry(KEYB_IRQ, isr_keyb);
+	init_idt_entry(COM1_IRQ, isr_com1);
 
 	re_program_interrupt_controller();
 
