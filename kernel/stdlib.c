@@ -41,3 +41,14 @@ int k_memcmp(const void* b1, const void* b2, int len)
 	return 0;
 }
 
+int strings_equal(char *string1, char *string2)
+{
+	while(*string1 != '\0') {
+		if(*string1 != *string2) {
+			return FALSE;
+		}
+		string1++,string2++;
+	}
+	return TRUE;
+}
+
