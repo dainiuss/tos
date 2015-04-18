@@ -54,9 +54,8 @@ void send_cmd_to_com(char *cmd)
 {
 	while(*cmd != '\0'){
 		/* Wait for the UART to accept the next byte */
-		while(!(inportb(COM1_PORT +5) & (1 << 5))){
-			outportb(COM1_PORT, *cmd);
-		}
+		while(!(inportb(COM1_PORT +5) & (1 << 5))) ;
+		outportb(COM1_PORT, *cmd);
 		cmd++;
 	}
 }

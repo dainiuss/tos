@@ -49,6 +49,10 @@ void shell_prompt()
 
 void shell_process(PROCESS self, PARAM param)
 {
+	volatile int flag;
+
+	DISABLE_INTR(flag);
+
 	int execute_command;
 	int number_of_chars;
 	char buffer[SHELL_WND_WIDTH];
@@ -92,14 +96,17 @@ void shell_process(PROCESS self, PARAM param)
 					break;
 			}
 
+
 		}
 		run_command(buffer, number_of_chars);
 	}
+	ENABLE_INTR(flag);
+
 }
 
 
 void init_shell()
 {
-	create_process(shell_process, 5, 0, "Shell Process");
+	create_process(shell_process, 4, 0, "Shell Process");
 	resign();
 }
