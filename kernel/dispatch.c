@@ -59,6 +59,9 @@ void add_ready_queue (PROCESS proc)
 
 	DISABLE_INTR(flag);
 
+	//output_string(kernel_window, ("%c", proc->name));
+	//output_string(kernel_window, "\n");
+
 	assert(proc->magic == MAGIC_PCB);
 	process_priority = proc->priority;
 	if(ready_queue[process_priority] == NULL){
