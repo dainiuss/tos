@@ -3,6 +3,13 @@
 #define SHELL_WND_WIDTH 61
 
 WINDOW shell_wnd = {0, 9, SHELL_WND_WIDTH, 16, 0, 0, 0xDC};
+WINDOW train_wnd = {0, 0, 80, 8, 0, 0, ' '};
+
+void run_train(WINDOW *wnd)
+{
+
+	init_train(wnd);
+}
 
 void run_command(char* buffer, int cmd)
 {
@@ -25,6 +32,10 @@ void run_command(char* buffer, int cmd)
 	}
 	if(strings_equal(buffer, "ps")) {
 		print_all_processes(&shell_wnd);
+		return;
+	}
+	if(strings_equal(buffer, "train")) {
+		run_train(&train_wnd);
 		return;
 	}
 
@@ -107,6 +118,6 @@ void shell_process(PROCESS self, PARAM param)
 
 void init_shell()
 {
-	create_process(shell_process, 4, 0, "Shell Process");
+	create_process(shell_process, 5, 0, "Shell Process");
 	resign();
 }
