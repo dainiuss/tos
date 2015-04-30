@@ -396,6 +396,9 @@ void wprintf(WINDOW* wnd, const char *fmt, ...)
 static WINDOW kernel_window_def = {0, 0, 80, 25, 0, 0, ' '};
 WINDOW* kernel_window = &kernel_window_def;
 
+static WINDOW train_window_def = {0, 0, 80, 8, 0, 0, ' '};
+WINDOW* train_window = &train_window_def;
+
 
 void kprintf(const char *fmt, ...)
 {

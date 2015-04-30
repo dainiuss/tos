@@ -48,6 +48,7 @@ typedef struct {
 } WINDOW;
 
 extern WINDOW* kernel_window;
+extern WINDOW* train_window;
 
 
 void move_cursor(WINDOW* wnd, int x, int y);

@@ -59,8 +59,9 @@ void add_ready_queue (PROCESS proc)
 
 	DISABLE_INTR(flag);
 
-	//output_string(kernel_window, ("%c", proc->name));
-	//output_string(kernel_window, "\n");
+	//output_string(train_window, "ADDED:     ");
+	//output_string(train_window, proc->name);
+	//output_string(train_window, "\n");
 
 	assert(proc->magic == MAGIC_PCB);
 	process_priority = proc->priority;
@@ -107,6 +108,10 @@ void remove_ready_queue (PROCESS proc)
 	volatile int flag;
 
 	DISABLE_INTR(flag);
+
+	//output_string(train_window, "REMOVED:   ");
+	//output_string(train_window, proc->name);
+	//output_string(train_window, "\n");
 
 	assert(proc->magic == MAGIC_PCB);
 	process_priority = proc->priority;
