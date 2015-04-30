@@ -30,59 +30,59 @@
 00000000000i[     ]   SB16 support: yes
 00000000000i[     ]   USB support: yes
 00000000000i[     ]   VGA extension support: vbe 
-00000000000i[MEM0 ] allocated memory at 0x7febe4a01010. after alignment, vector=0x7febe4a02000
+00000000000i[MEM0 ] allocated memory at 0x7f1fcb3ee010. after alignment, vector=0x7f1fcb3ef000
 00000000000i[MEM0 ] 8.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=8
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
 00000000000i[MEM0 ] rom at 0xc0000/41472 ('/usr/share/bochs/VGABIOS-lgpl-latest')
-00000000000i[     ] lt_dlhandle is 0x3aa1d10
+00000000000i[     ] lt_dlhandle is 0x2a23d10
 00000000000i[PLGIN] loaded plugin libbx_cmos.so
-00000000000i[     ] lt_dlhandle is 0x3aa2730
+00000000000i[     ] lt_dlhandle is 0x2a24730
 00000000000i[PLGIN] loaded plugin libbx_dma.so
-00000000000i[     ] lt_dlhandle is 0x3aa3190
+00000000000i[     ] lt_dlhandle is 0x2a25190
 00000000000i[PLGIN] loaded plugin libbx_pic.so
-00000000000i[     ] lt_dlhandle is 0x3aa39d0
+00000000000i[     ] lt_dlhandle is 0x2a259d0
 00000000000i[PLGIN] loaded plugin libbx_pit.so
-00000000000i[     ] lt_dlhandle is 0x3aa4340
+00000000000i[     ] lt_dlhandle is 0x2a26340
 00000000000i[PLGIN] loaded plugin libbx_vga.so
-00000000000i[     ] lt_dlhandle is 0x3aa4aa0
+00000000000i[     ] lt_dlhandle is 0x2a26aa0
 00000000000i[PLGIN] loaded plugin libbx_hdimage.so
-00000000000i[     ] lt_dlhandle is 0x3aa53a0
+00000000000i[     ] lt_dlhandle is 0x2a273a0
 00000000000i[PLGIN] loaded plugin libbx_floppy.so
-00000000000i[     ] lt_dlhandle is 0x3aa5f60
+00000000000i[     ] lt_dlhandle is 0x2a27f60
 00000000000i[PLGIN] loaded plugin libbx_soundmod.so
-00000000000i[     ] lt_dlhandle is 0x3aa6810
+00000000000i[     ] lt_dlhandle is 0x2a28810
 00000000000i[PLGIN] loaded plugin libbx_pci.so
-00000000000i[     ] lt_dlhandle is 0x3aa73d0
+00000000000i[     ] lt_dlhandle is 0x2a293d0
 00000000000i[PLGIN] loaded plugin libbx_pci2isa.so
-00000000000i[     ] lt_dlhandle is 0x3aa7d10
+00000000000i[     ] lt_dlhandle is 0x2a29d10
 00000000000i[PLGIN] loaded plugin libbx_usb_common.so
-00000000000i[     ] lt_dlhandle is 0x3aa85b0
+00000000000i[     ] lt_dlhandle is 0x2a2a5b0
 00000000000i[PLGIN] loaded plugin libbx_unmapped.so
-00000000000i[     ] lt_dlhandle is 0x3aa8e30
+00000000000i[     ] lt_dlhandle is 0x2a2ae30
 00000000000i[PLGIN] loaded plugin libbx_biosdev.so
-00000000000i[     ] lt_dlhandle is 0x3aa9800
+00000000000i[     ] lt_dlhandle is 0x2a2b800
 00000000000i[PLGIN] loaded plugin libbx_speaker.so
-00000000000i[     ] lt_dlhandle is 0x3aa9f90
+00000000000i[     ] lt_dlhandle is 0x2a2bf90
 00000000000i[PLGIN] loaded plugin libbx_extfpuirq.so
-00000000000i[     ] lt_dlhandle is 0x3aaa810
+00000000000i[     ] lt_dlhandle is 0x2a2c810
 00000000000i[PLGIN] loaded plugin libbx_gameport.so
-00000000000i[     ] lt_dlhandle is 0x3aab1a0
+00000000000i[     ] lt_dlhandle is 0x2a2d1a0
 00000000000i[PLGIN] loaded plugin libbx_pci_ide.so
-00000000000i[     ] lt_dlhandle is 0x3aabb80
+00000000000i[     ] lt_dlhandle is 0x2a2db80
 00000000000i[PLGIN] loaded plugin libbx_acpi.so
-00000000000i[     ] lt_dlhandle is 0x3aac4c0
+00000000000i[     ] lt_dlhandle is 0x2a2e4c0
 00000000000i[PLGIN] loaded plugin libbx_ioapic.so
-00000000000i[     ] lt_dlhandle is 0x3aace70
+00000000000i[     ] lt_dlhandle is 0x2a2ee70
 00000000000i[PLGIN] loaded plugin libbx_keyboard.so
-00000000000i[     ] lt_dlhandle is 0x3aad680
+00000000000i[     ] lt_dlhandle is 0x2a2f680
 00000000000i[PLGIN] loaded plugin libbx_harddrv.so
-00000000000i[     ] lt_dlhandle is 0x3abf760
+00000000000i[     ] lt_dlhandle is 0x2a41760
 00000000000i[PLGIN] loaded plugin libbx_serial.so
-00000000000i[     ] lt_dlhandle is 0x3ac05e0
+00000000000i[     ] lt_dlhandle is 0x2a425e0
 00000000000i[PLGIN] loaded plugin libbx_parallel.so
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Wed Apr 29 23:06:58 2015 (time0=1430374018)
+00000000000i[CMOS ] Setting initial clock to: Thu Apr 30 11:46:17 2015 (time0=1430419577)
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[DMA  ] channel 2 used by Floppy Drive
 00000000000i[FDD  ] fd0: 'image/disk_image' ro=0, h=2,t=80,spt=18
@@ -110,7 +110,7 @@
 00000000000i[HD   ] Using boot sequence floppy, none, none
 00000000000i[HD   ] Floppy boot signature check is enabled
 00000000000i[PLGIN] init_dev of 'serial' plugin device by virtual method
-00000000000i[SER  ] com1 - inet client - socket_id: 7, ip:localhost, port:8888
+00000000000i[SER  ] com1 - inet client - socket_id: 8, ip:localhost, port:8888
 00000000000i[SER  ] com1 at 0x03f8 irq 4
 00000000000i[SER  ] com2: connect() failed (host:localhost, port:8899)
 00000000000i[SER  ] com2 at 0x02f8 irq 3
@@ -158,42 +158,1389 @@
 00000000000i[PLGIN] reset of 'serial' plugin device by virtual method
 00000000000i[PLGIN] reset of 'parallel' plugin device by virtual method
 00000003305i[BIOS ] $Revision: 1.257 $ $Date: 2011/01/26 09:52:02 $
-00000325049i[KBD  ] reset-disable command received
-00000457894i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
-00000460901i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
-00000779612i[BIOS ] Starting rombios32
-00000780050i[BIOS ] Shutdown flag 0
-00000780622i[BIOS ] ram_size=0x00800000
-00000781021i[BIOS ] ram_end=8MB
-00000880935i[BIOS ] Found 1 cpu(s)
-00000896783i[BIOS ] bios_table_addr: 0x000fb928 end=0x000fcc00
-00000896877i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
-00001224574i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
-00001552502i[P2I  ] PCI IRQ routing: PIRQA# set to 0x0b
-00001552521i[P2I  ] PCI IRQ routing: PIRQB# set to 0x09
-00001552540i[P2I  ] PCI IRQ routing: PIRQC# set to 0x0b
-00001552559i[P2I  ] PCI IRQ routing: PIRQD# set to 0x09
-00001552569i[P2I  ] write: ELCR2 = 0x0a
-00001553340i[BIOS ] PIIX3/PIIX4 init: elcr=00 0a
-00001561012i[BIOS ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
-00001563287i[BIOS ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
-00001565401i[BIOS ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
-00001565625i[PIDE ] new BM-DMA address: 0xc000
-00001566240i[BIOS ] region 4: 0x0000c000
-00001568267i[BIOS ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
-00001568496i[ACPI ] new irq line = 11
-00001568508i[ACPI ] new irq line = 9
-00001568533i[ACPI ] new PM base address: 0xb000
-00001568547i[ACPI ] new SM base address: 0xb100
-00001568575i[PCI  ] setting SMRAM control register to 0x4a
-00001732668i[CPU0 ] Enter to System Management Mode
-00001732678i[CPU0 ] RSM: Resuming from System Management Mode
-00001896699i[PCI  ] setting SMRAM control register to 0x0a
-00001905449i[BIOS ] MP table addr=0x000fba00 MPC table addr=0x000fb930 size=0xd0
-00001907263i[BIOS ] SMBIOS table addr=0x000fba10
-00001910396i[BIOS ] Firmware waking vector 0x7f00cc
-00001915307i[BIOS ] ACPI tables: RSDP addr=0x000fbb30 ACPI DATA addr=0x007f0000 size=0x1f18
-00001915343i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
-00001916067i[BIOS ] bios_table_cur_addr: 0x000fbb54
-00032315749i[BIOS ] Booting from 0000:7c00
-00059328351i[BIOS ] int13_harddisk: function 00, ELDL out of range cd
+00000320056i[KBD  ] reset-disable command received
+00000452901i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00000455908i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00000774619i[BIOS ] Starting rombios32
+00000775057i[BIOS ] Shutdown flag 0
+00000775629i[BIOS ] ram_size=0x00800000
+00000776028i[BIOS ] ram_end=8MB
+00000875987i[BIOS ] Found 1 cpu(s)
+00000891835i[BIOS ] bios_table_addr: 0x000fb928 end=0x000fcc00
+00000891929i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
+00001219626i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
+00001547554i[P2I  ] PCI IRQ routing: PIRQA# set to 0x0b
+00001547573i[P2I  ] PCI IRQ routing: PIRQB# set to 0x09
+00001547592i[P2I  ] PCI IRQ routing: PIRQC# set to 0x0b
+00001547611i[P2I  ] PCI IRQ routing: PIRQD# set to 0x09
+00001547621i[P2I  ] write: ELCR2 = 0x0a
+00001548392i[BIOS ] PIIX3/PIIX4 init: elcr=00 0a
+00001556064i[BIOS ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00001558339i[BIOS ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00001560453i[BIOS ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00001560677i[PIDE ] new BM-DMA address: 0xc000
+00001561292i[BIOS ] region 4: 0x0000c000
+00001563319i[BIOS ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00001563548i[ACPI ] new irq line = 11
+00001563560i[ACPI ] new irq line = 9
+00001563585i[ACPI ] new PM base address: 0xb000
+00001563599i[ACPI ] new SM base address: 0xb100
+00001563627i[PCI  ] setting SMRAM control register to 0x4a
+00001727720i[CPU0 ] Enter to System Management Mode
+00001727730i[CPU0 ] RSM: Resuming from System Management Mode
+00001891751i[PCI  ] setting SMRAM control register to 0x0a
+00001900501i[BIOS ] MP table addr=0x000fba00 MPC table addr=0x000fb930 size=0xd0
+00001902315i[BIOS ] SMBIOS table addr=0x000fba10
+00001905448i[BIOS ] Firmware waking vector 0x7f00cc
+00001910359i[BIOS ] ACPI tables: RSDP addr=0x000fbb30 ACPI DATA addr=0x007f0000 size=0x1f18
+00001910395i[PCI  ] 440FX PMC write to PAM register 59 (TLB Flush)
+00001911119i[BIOS ] bios_table_cur_addr: 0x000fbb54
+00032315751i[BIOS ] Booting from 0000:7c00
+01008263381e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008264059e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008264737e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008265415e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008266093e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008266771e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008267449e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008268127e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008268805e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008269483e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008270161e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008270839e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008271517e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008272195e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008272873e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008273551e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008274229e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008274907e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008275585e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008276263e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008276941e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008277619e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008278297e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008278975e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008279653e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008280331e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008281009e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008281687e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008282365e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008283043e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008283721e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008284399e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008285077e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008285755e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008286433e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008287111e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008287789e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008288467e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008289145e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008289823e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008290501e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008291179e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008291857e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008292535e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008293213e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008293891e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008294569e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008295247e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008295925e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008296603e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008297281e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008297959e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008298637e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008299315e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008299993e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008300671e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008301349e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008302027e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008302705e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008303383e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008304061e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008304739e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008305417e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008306095e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008306773e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008307451e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008308129e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008308807e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008309485e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008310163e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008310841e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008311519e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008312197e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008312875e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008313553e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008314231e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008314909e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008315587e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008316265e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008316943e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008317621e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008318299e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008318977e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008319655e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008320333e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008321011e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008321689e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008322367e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008323045e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008323723e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008324401e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008325079e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008325757e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008326435e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008327113e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008327791e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008328469e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008329147e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008329825e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008330503e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008331181e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008331859e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008332537e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008333215e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008333893e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008334571e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008335249e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008335927e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008336605e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008337283e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008337961e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008338639e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008339317e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008339995e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008340673e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008341351e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008342029e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008342707e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008343385e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008344063e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008344741e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008345419e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008346097e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008346775e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008347453e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008348131e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008348809e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008349487e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008350165e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008350843e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008351521e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008352199e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008352877e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008353555e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008354233e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008354911e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008355589e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008356267e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008356945e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008357623e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008358301e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008358979e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008359657e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008360335e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008361013e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008361691e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008362369e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008363047e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008363725e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008364403e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008365081e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008365759e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008366437e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008367115e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008367793e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008368471e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008369149e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008369827e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008370505e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008371183e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008371861e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008372539e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008373217e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008373895e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008374573e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008375251e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008375929e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008376607e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008377285e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008377963e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008378641e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008379319e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008379997e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008380675e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008381353e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008382031e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008382709e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008383387e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008384065e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008384743e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008385421e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008386099e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008386777e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008387455e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008388133e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008388811e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008389489e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008390167e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008390845e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008391523e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008392201e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008392879e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008393557e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008394235e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008394913e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008395591e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008396269e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008396947e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008397625e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008398303e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008398981e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008399659e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008400337e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008401015e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008401693e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008402371e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008403049e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008403727e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008404405e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008405083e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008405761e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008406439e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008407117e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008407795e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008408473e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008409151e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008409829e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008410507e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008411185e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008411863e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008412541e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008413219e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008413897e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008414575e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008415253e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008415931e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008416609e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008417287e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008417965e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008418643e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008419321e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008419999e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008420677e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008421355e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008422033e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008422711e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008423389e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008424067e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008424745e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008425423e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008426101e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008426779e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008427457e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008428135e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008428813e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008429491e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008430169e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008430847e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008431525e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008432203e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008432881e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008433559e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008434237e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008434915e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008435593e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008436271e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008436949e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008437627e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008438305e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008438983e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008439661e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008440339e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008441017e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008441695e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008442373e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008443051e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008443729e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008444407e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008445085e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008445763e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008446441e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008447119e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008447797e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008448475e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008449153e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008449831e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008450509e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008451187e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008451865e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008452543e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008453221e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008453899e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008454577e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008455255e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008455933e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008456611e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008457289e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008457967e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008458645e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008459323e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008460001e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008460679e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008461357e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008462035e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008462713e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008463391e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008464069e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008464747e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008465425e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008466103e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008466781e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008467459e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008468137e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008468815e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008469493e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008470171e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008470849e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008471527e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008472205e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008472883e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008473561e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008474239e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008474917e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008475595e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008476273e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008476951e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008477629e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008478307e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008478985e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008479663e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008480341e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008481019e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008481697e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008482375e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008483053e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008483731e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008484409e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008485087e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008485765e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008486443e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008487121e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008487799e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008488477e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008489155e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008489833e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008490511e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008491189e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008491867e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008492545e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008493223e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008493901e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008494579e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008495257e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008495935e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008496613e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008497291e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008497969e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008498647e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008499325e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008500003e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008500681e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008501359e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008502037e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008502715e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008503393e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008504071e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008504749e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008505427e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008506105e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008506783e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008507461e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008508139e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008508817e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008509495e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008510173e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008510851e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008511529e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008512207e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008512885e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008513563e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008514241e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008514919e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008515597e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008516275e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008516953e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008517631e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008518309e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008518987e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008519665e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008520343e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008521021e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008521699e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008522377e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008523055e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008523733e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008524411e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008525089e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008525767e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008526445e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008527123e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008527801e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008528479e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008529157e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008529835e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008530513e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008531191e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008531869e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008532547e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008533225e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008533903e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008534581e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008535259e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008535937e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008536615e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008537293e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008537971e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008538649e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008539327e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008540005e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008540683e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008541361e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008542039e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008542717e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008543395e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008544073e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008544751e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008545429e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008546107e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008546785e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008547463e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008548141e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008548819e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008549497e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008550175e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008550853e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008551531e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008552209e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008552887e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008553565e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008554243e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008554921e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008555599e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008556277e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008556955e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008557633e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008558311e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008558989e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008559667e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008560345e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008561023e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008561701e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008562379e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008563057e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008563735e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008564413e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008565091e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008565769e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008566447e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008567125e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008567803e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008568481e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008569159e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008569837e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008570515e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008571193e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008571871e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008572549e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008573227e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008573905e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008574583e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008575261e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008575939e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008576617e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008577295e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008577973e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008578651e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008579329e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008580007e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008580685e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008581363e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008582041e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008582719e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008583397e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008584075e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008584753e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008585431e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008586109e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008586787e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008587465e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008588143e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008588821e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008589499e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008590177e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008590855e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008591533e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008592211e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008592889e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008593567e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008594245e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008594923e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008595601e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008596279e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008596957e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008597635e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008598313e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008598991e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008599669e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008600347e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008601025e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008601703e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008602381e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008603059e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008603737e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008604415e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008605093e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008605771e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008606449e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008607127e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008607805e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008608483e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008609161e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008609839e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008610517e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008611195e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008611873e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008612551e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008613229e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008613907e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008614585e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008615263e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008615941e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008616619e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008617297e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008617975e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008618653e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008619331e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008620009e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008620687e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008621365e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008622043e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008622721e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008623399e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008624077e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008624755e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008625433e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008626111e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008626789e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008627467e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008628145e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008628823e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008629501e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008630179e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008630857e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008631535e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008632213e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008632891e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008633569e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008634247e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008634925e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008635603e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008636281e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008636959e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008637637e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008638315e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008638993e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008639671e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008640349e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008641027e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008641705e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008642383e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008643061e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008643739e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008644417e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008645095e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008645773e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008646451e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008647129e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008647807e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008648485e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008649163e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008649841e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008650519e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008651197e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008651875e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008652553e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008653231e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008653909e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008654587e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008655265e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008655943e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008656621e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008657299e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008657977e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008658655e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008659333e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008660011e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008660689e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008661367e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008662045e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008662723e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008663401e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008664079e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008664757e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008665435e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008666113e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008666791e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008667469e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008668147e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008668825e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008669503e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008670181e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008670859e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008671537e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008672215e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008672893e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008673571e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008674249e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008674927e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008675605e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008676283e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008676961e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008677639e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008678317e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008678995e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008679673e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008680351e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008681029e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008681707e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008682385e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008683063e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008683741e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008684419e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008685097e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008685775e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008686453e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008687131e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008687809e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008688487e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008689165e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008689843e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008690521e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008691199e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008691877e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008692555e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008693233e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008693911e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008694589e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008695267e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008695945e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008696623e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008697301e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008697979e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008698657e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008699335e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008700013e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008700691e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008701369e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008702047e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008702725e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008703403e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008704081e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008704759e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008705437e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008706115e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008706793e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008707471e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008708149e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008708827e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008709505e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008710183e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008710861e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008711539e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008712217e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008712895e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008713573e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008714251e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008714929e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008715607e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008716285e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008716963e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008717641e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008718319e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008718997e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008719675e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008720353e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008721031e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008721709e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008722387e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008723065e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008723743e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008724421e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008725099e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008725777e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008726455e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008727133e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008727811e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008728489e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008729167e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008729845e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008730523e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008731201e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008731879e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008732557e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008733235e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008733913e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008734591e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008735269e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008735947e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008736625e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008737303e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008737981e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008738659e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008739337e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008740015e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008740693e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008741371e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008742049e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008742727e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008743405e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008744083e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008744761e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008745439e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008746117e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008746795e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008747473e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008748151e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008748829e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008749507e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008750185e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008750863e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008751541e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008752219e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008752897e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008753575e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008754253e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008754931e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008755609e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008756287e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008756965e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008757643e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008758321e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008758999e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008759677e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008760355e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008761033e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008761711e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008762389e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008763067e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008763745e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008764423e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008765101e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008765779e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008766457e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008767135e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008767813e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008768491e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008769169e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008769847e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008770525e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008771203e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008771881e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008772559e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008773237e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008773915e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008774593e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008775271e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008775949e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008776627e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008777305e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008777983e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008778661e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008779339e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008780017e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008780695e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008781373e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008782051e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008782729e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008783407e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008784085e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008784763e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008785441e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008786119e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008786797e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008787475e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008788153e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008788831e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008789509e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008790187e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008790865e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008791543e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008792221e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008792899e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008793577e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008794255e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008794933e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008795611e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008796289e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008796967e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008797645e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008798323e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008799001e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008799679e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008800357e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008801035e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008801713e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008802391e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008803069e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008803747e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008804425e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008805103e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008805781e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008806459e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008807137e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008807815e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008808493e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008809171e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008809849e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008810527e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008811205e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008811883e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008812561e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008813239e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008813917e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008814595e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008815273e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008815951e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008816629e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008817307e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008817985e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008818663e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008819341e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008820019e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008820697e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008821375e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008822053e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008822731e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008823409e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008824087e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008824765e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008825443e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008826121e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008826799e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008827477e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008828155e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008828833e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008829511e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008830189e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008830867e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008831545e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008832223e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008832901e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008833579e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008834257e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008834935e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008835613e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008836291e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008836969e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008837647e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008838325e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008839003e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008839681e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008840359e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008841037e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008841715e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008842393e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008843071e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008843749e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008844427e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008845105e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008845783e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008846461e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008847139e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008847817e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008848495e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008849173e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008849851e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008850529e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008851207e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008851885e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008852563e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008853241e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008853919e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008854597e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008855275e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008855953e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008856631e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008857309e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008857987e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008858665e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008859343e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008860021e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008860699e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008861377e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008862055e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008862733e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008863411e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008864089e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008864767e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008865445e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008866123e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008866801e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008867479e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008868157e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008868835e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008869513e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008870191e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008870869e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008871547e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008872225e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008872903e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008873581e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008874259e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008874937e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008875615e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008876293e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008876971e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008877649e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008878327e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008879005e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008879683e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008880361e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008881039e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008881717e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008882395e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008883073e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008883751e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008884429e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008885107e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008885785e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008886463e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008887141e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008887819e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008888497e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008889175e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008889853e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008890531e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008891209e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008891887e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008892565e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008893243e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008893921e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008894599e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008895277e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008895955e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008896633e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008897311e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008897989e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008898667e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008899345e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008900023e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008900701e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008901379e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008902057e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008902735e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008903413e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008904091e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008904769e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008905447e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008906125e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008906803e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008907481e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008908159e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008908837e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008909515e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008910193e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008910871e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008911549e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008912227e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008912905e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008913583e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008914261e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008914939e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008915617e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008916295e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008916973e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008917651e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008918329e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008919007e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008919685e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008920363e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008921041e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008921719e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008922397e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008923075e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008923753e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008924431e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008925109e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008925787e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008926465e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008927143e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008927821e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008928499e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008929177e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008929855e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008930533e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008931211e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008931889e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008932567e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008933245e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008933923e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008934601e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008935279e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008935957e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008936635e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008937313e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008937991e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008938669e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008939347e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008940025e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008940703e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008941381e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008942059e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008942737e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008943415e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008944093e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008944771e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008945449e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008946127e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008946805e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008947483e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008948161e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008948839e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008949517e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008950195e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008950873e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008951551e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008952229e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008952907e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008953585e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008954263e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008954941e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008955619e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008956297e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008956975e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008957653e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008958331e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008959009e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008959687e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008960365e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008961043e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008961721e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008962399e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008963077e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008963755e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008964433e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008965111e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008965789e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008966467e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008967145e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008967823e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008968501e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008969179e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008969857e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008970535e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008971213e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008971891e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008972569e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008973247e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008973925e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008974603e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008975281e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008975959e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008976637e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008977315e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008977993e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008978671e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008979349e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008980027e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008980705e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008981383e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008982061e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008982739e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008983417e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008984095e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008984773e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008985451e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008986129e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008986807e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008987485e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008988163e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008988841e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008989519e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008990197e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008990875e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008991553e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008992231e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008992909e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008993587e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008994265e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008994943e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008995621e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008996299e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008996977e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008997655e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008998333e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008999011e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01008999689e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009000367e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009001045e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009001723e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009002401e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009003079e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009003757e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009004435e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009005113e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009005791e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009006469e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009007147e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009007825e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009008503e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009009181e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009009859e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009010537e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009011215e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009011893e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009012571e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009013249e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009013927e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009014605e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009015283e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009015961e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009016639e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009017317e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009017995e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009018673e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009019351e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009020029e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009020707e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009021385e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009022063e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009022741e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009023419e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009024097e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009024775e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009025453e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009026131e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009026809e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009027487e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009028165e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009028843e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009029521e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009030199e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009030877e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009031555e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009032233e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009032911e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009033589e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009034267e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009034945e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009035623e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009036301e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009036979e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009037657e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009038335e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009039013e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009039691e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009040369e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009041047e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009041725e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009042403e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009043081e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009043759e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009044437e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009045115e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009045793e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009046471e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009047149e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009047827e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009048505e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009049183e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009049861e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009050539e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009051217e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009051895e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009052573e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009053251e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009053929e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009054607e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009055285e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009055963e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009056641e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009057319e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009057997e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009058675e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009059353e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009060031e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009060709e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009061387e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009062065e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009062743e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009063421e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009064099e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009064777e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009065455e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009066133e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009066811e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009067489e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009068167e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009068845e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009069523e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009070201e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009070879e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009071557e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009072235e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009072913e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009073591e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009074269e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009074947e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009075625e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009076303e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009076981e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009077659e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009078337e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009079015e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009079693e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009080371e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009081049e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009081727e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009082405e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009083083e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009083761e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009084439e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009085117e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009085795e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009086473e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009087151e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009087829e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009088507e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009089185e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009089863e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009090541e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009091219e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009091897e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009092575e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009093253e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009093931e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009094609e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009095287e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009095965e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009096643e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009097321e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009097999e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009098677e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009099355e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009100033e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009100711e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009101389e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009102067e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009102745e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009103423e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009104101e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009104779e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009105457e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009106135e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009106813e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009107491e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009108169e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009108847e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009109525e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009110203e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009110881e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009111559e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009112237e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009112915e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009113593e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009114271e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009114949e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009115627e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009116305e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009116983e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009117661e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009118339e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009119017e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009119695e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009120373e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009121051e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009121729e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009122407e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009123085e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009123763e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009124441e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009125119e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009125797e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009126475e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009127153e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009127831e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009128509e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009129187e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009129865e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009130543e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009131221e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009131899e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009132577e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009133255e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009133933e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009134611e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009135289e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009135967e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009136645e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009137323e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009138001e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009138679e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009139357e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009140035e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009140713e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009141391e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009142069e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009142747e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009143425e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009144103e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009144781e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009145459e[CPU0 ] jump_protected: call gate.dpl < selector.rpl
+01009146137e[CPU0 ] jump_protected: gate type 15 unsupported
+01009147025e[CPU0 ] jump_protected: gate type 15 unsupported
+01009147913e[CPU0 ] jump_protected: gate type 15 unsupported
+01009148801e[CPU0 ] jump_protected: gate type 15 unsupported
+01009149689e[CPU0 ] jump_protected: gate type 15 unsupported
+01009150577e[CPU0 ] jump_protected: gate type 15 unsupported
+01009151465e[CPU0 ] jump_protected: gate type 15 unsupported
+01009152353e[CPU0 ] jump_protected: gate type 15 unsupported
+01009153241e[CPU0 ] jump_protected: gate type 15 unsupported
+01009154129e[CPU0 ] jump_protected: gate type 15 unsupported
+01009155017e[CPU0 ] jump_protected: gate type 15 unsupported
+01009155905e[CPU0 ] jump_protected: gate type 15 unsupported
+01009156793e[CPU0 ] jump_protected: gate type 15 unsupported
+01009157681e[CPU0 ] jump_protected: gate type 15 unsupported
+01009158259e[CPU0 ] jump_protected: gate type 15 unsupported
+01396850000p[SDL  ] >>PANIC<< User requested shutdown.
+01396850000i[CPU0 ] CPU is in protected mode (active)
+01396850000i[CPU0 ] CS.d_b = 32 bit
+01396850000i[CPU0 ] SS.d_b = 32 bit
+01396850000i[CPU0 ] EFER   = 0x00000000
+01396850000i[CPU0 ] | RAX=000000000000b3ff  RBX=00000000000089e2
+01396850000i[CPU0 ] | RCX=00000000ffffffff  RDX=0000000000000000
+01396850000i[CPU0 ] | RSP=000000000000b2d8  RBP=0000000057f000ff
+01396850000i[CPU0 ] | RSI=00000000024f91f1  RDI=0000000002504528
+01396850000i[CPU0 ] |  R8=0000000000000000   R9=0000000000000000
+01396850000i[CPU0 ] | R10=0000000000000000  R11=0000000000000000
+01396850000i[CPU0 ] | R12=0000000000000000  R13=0000000000000000
+01396850000i[CPU0 ] | R14=0000000000000000  R15=0000000000000000
+01396850000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf SF zf af pf cf
+01396850000i[CPU0 ] | SEG selector     base    limit G D
+01396850000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+01396850000i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+01396850000i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01396850000i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01396850000i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01396850000i[CPU0 ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01396850000i[CPU0 ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+01396850000i[CPU0 ] |  MSR_FS_BASE:0000000000000000
+01396850000i[CPU0 ] |  MSR_GS_BASE:0000000000000000
+01396850000i[CPU0 ] | RIP=0000000000004763 (0000000000004763)
+01396850000i[CPU0 ] | CR0=0x60000011 CR2=0x0000000000000000
+01396850000i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
+01396850000i[CPU0 ] 0x0000000000004763>> cmp ecx, 0xffffffff : 83F9FF
+01396850000i[CMOS ] Last time is 1430419716 (Thu Apr 30 11:48:36 2015)
+01396850000i[     ] restoring default signal behavior
+01396850000i[CTRL ] quit_sim called with exit code 1

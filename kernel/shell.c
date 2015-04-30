@@ -5,6 +5,9 @@
 WINDOW shell_wnd = {0, 9, SHELL_WND_WIDTH, 16, 0, 0, 0xDC};
 WINDOW train_wnd = {0, 0, 80, 8, 0, 0, ' '};
 
+//int number_of_chars;
+//char buffer[80];
+
 void run_train(WINDOW *wnd)
 {
 	init_train(wnd);
