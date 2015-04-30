@@ -4,7 +4,7 @@
 
 void kernel_main()
 {
-	clear_window(kernel_window);
+	//clear_window(kernel_window);
 
     // this turns off the VGA hardware cursor
     // otherwise we get an annoying, meaningless,

@@ -26,7 +26,7 @@ void timer_process(PROCESS self, PARAM param)
 
 	create_process(timer_notifier, 7, 0, "Timer notifier");
 
-	while(1){
+	while(42){
 		msg = (Timer_Message *) receive(&sender);
 
 		if(msg == NULL){

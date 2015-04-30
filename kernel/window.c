@@ -174,21 +174,21 @@ char *printnum(char *b, unsigned int u, int base,
     size = &buf [MAXBUF - 1] - p;
     
     if (size < length && !ladjust) {
-	while (length > size) {
-	    *b++ = padc;
-	    length--;
-	}
+		while (length > size) {
+			*b++ = padc;
+			length--;
+		}
     }
     
     while (++p != &buf [MAXBUF])
 	*b++ = *p;
     
     if (size < length) {
-	/* must be ladjust */
-	while (length > size) {
-	    *b++ = padc;
-	    length--;
-	}
+		/* must be ladjust */
+		while (length > size) {
+			*b++ = padc;
+			length--;
+		}
     }
     return b;
 }
