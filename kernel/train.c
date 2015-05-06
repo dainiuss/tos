@@ -22,6 +22,10 @@ void run_train_configuration_with_zamboni(int position_code, int zamboni_positio
 void train_process(PROCESS self, PARAM param);
 void initialize_switches();
 
+/**
+ * Send message to COM1 port
+ * Called in all train commands
+ */
 void send_signal_to_com1(char *cmd, int len_input_buffer, char* input_buffer)
 {
 	COM_Message msg;
@@ -34,7 +38,10 @@ void send_signal_to_com1(char *cmd, int len_input_buffer, char* input_buffer)
 	sleep(sleep_tick);
 }
 
-// R\015
+/**
+ * Clear buffer
+ * R\015
+ */
 void clear_buffer()
 {
 	char empty;
@@ -47,7 +54,10 @@ void clear_buffer()
 	send_signal_to_com1(cmd, 0, empty);
 }
 
-// L20S4\015
+/**
+ * Set speed
+ * L20S4\015
+ */
 void set_speed(char speed)
 {
 	char empty;
@@ -64,7 +74,10 @@ void set_speed(char speed)
 	send_signal_to_com1(cmd, 0, empty);
 }
 
-// L20S0\015
+/**
+ * Stop train
+ * L20S0\015
+ */
 void stop_train()
 {
 	char empty;
@@ -81,7 +94,10 @@ void stop_train()
 	send_signal_to_com1(cmd, 0, empty);
 }
 
-// L20D\015
+/**
+ * Change train's direction
+ * L20D\015
+ */
 void change_direction()
 {
 	char empty;
@@ -97,9 +113,12 @@ void change_direction()
 	send_signal_to_com1(cmd, 0, empty);
 }
 
-// C3\015
-// *1\015 - returned if train on the contact
-// *0\015 - returned if no train on the contact
+/**
+ * Probe the contact for the train
+ * C3\015
+ * *1\015 - returned if train on the contact
+ * *0\015 - returned if no train on the contact
+ */
 char get_status_of_contact(char *contact_id)
 {
 	char result[3];
@@ -126,7 +145,9 @@ char get_status_of_contact(char *contact_id)
 	return result[1];
 }
 
-/* Find train and car position */
+/**
+ *  Find train and car is on position 8 and 2
+ */
 int is_train8_car2()
 {
 	int train = get_status_of_contact("8");
@@ -139,6 +160,9 @@ int is_train8_car2()
 	}
 }
 
+/**
+ *  Find train and car is on position 5 and 11
+ */
 int is_train5_car11()
 {
 	int train = get_status_of_contact("5");
@@ -151,6 +175,9 @@ int is_train5_car11()
 	}
 }
 
+/**
+ *  Find train and car is on position 5 and 16
+ */
 int is_train5_car16()
 {
 	int train = get_status_of_contact("5");
@@ -164,7 +191,7 @@ int is_train5_car16()
 }
 
 /**
- * Find Zamboni on he rail
+ * Find Zamboni on the rail
  * Clockwise direction status = 2
  * Counterclockwise direction status = 3
  * Direction unknown status = 1
@@ -226,7 +253,10 @@ int find_zamboni()
 	return direction_status;
 }
 
-// ‘M5R\015
+/**
+ * Set switch position n to color <G|R>
+ * M5R\015
+ */
 void set_switch(char position, char switch_char)
 {
 	char empty;
@@ -241,7 +271,10 @@ void set_switch(char position, char switch_char)
 	send_signal_to_com1(cmd, 0, empty);
 }
 
-/* Zamboni is not present */
+/**
+ * Run train configuration when
+ * Zamboni is not present
+ */
 void run_train_configuration_no_zamboni(int position_code)
 {
 	char speed;
@@ -412,6 +445,7 @@ void run_train_configuration_no_zamboni(int position_code)
 }
 
 /**
+ * Run train configuration when
  * Zamboni is present
  * Zamboni Position:
  * 2 => clockwise
@@ -713,9 +747,11 @@ void run_train_configuration_with_zamboni(int position_code, int zamboni_positio
 	else{
 		wprintf(train_window, "Train position unknown!\n");
 	}
-
 }
 
+/**
+ * Train process
+ */
 void train_process(PROCESS self, PARAM param)
 {
 	train_window = (WINDOW*) param;
@@ -727,7 +763,6 @@ void train_process(PROCESS self, PARAM param)
 	int zamboni_found = 0;
 	int position_code = 0;
 
-	//clear_window(train_window);
 	if(pos8_2){
 		wprintf(train_window, "Train on track 8, car on track 2\n");
 		position_code = 82;
@@ -776,6 +811,9 @@ void train_process(PROCESS self, PARAM param)
 
 }
 
+/**
+ * Init all switches
+ */
 void initialize_switches()
 {
 	wprintf(train_window, "Initializing rail switches.\n");
@@ -790,6 +828,9 @@ void initialize_switches()
 	set_switch('9','R');
 }
 
+/**
+ * Init train
+ */
 void init_train(WINDOW* wnd)
 {
 	wprintf(wnd, "Initializing TOS Train...\n");

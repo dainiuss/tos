@@ -5,19 +5,25 @@
 WINDOW shell_wnd = {0, 9, SHELL_WND_WIDTH, 16, 0, 0, 0xDC};
 WINDOW train_wnd = {0, 0, 80, 8, 0, 0, ' '};
 
-//int number_of_chars;
-//char buffer[80];
-
+/**
+ * Runs the train
+ */
 void run_train(WINDOW *wnd)
 {
 	init_train(wnd);
 }
 
+/**
+ * Sets switch position n to <R|G>
+ */
 void set_switch_position(char position, char switch_char)
 {
 	set_switch(position, switch_char);
 }
 
+/**
+ * Checks if buffer has empty char
+ */
 int buffer_has_empty(char *buffer)
 {
 	int i;
@@ -31,7 +37,9 @@ int buffer_has_empty(char *buffer)
 	return has_empty;
 }
 
-/* Get command and next 2 arguments */
+/**
+ * Get command and next 2 arguments
+ */
 void* get_command(char *command, char *arg1, char *arg2, char *buffer)
 {
 	int i;
@@ -86,6 +94,9 @@ void* get_command(char *command, char *arg1, char *arg2, char *buffer)
 	return command;
 }
 
+/**
+ * Run command
+ */
 void run_command(char *buffer, int cmd)
 {
 	char command[9];
@@ -169,6 +180,9 @@ void run_command(char *buffer, int cmd)
 	return;
 }
 
+/**
+ * Print shell header
+ */
 void shell_header(WINDOW *wnd)
 {
 	wprintf(wnd, "-------------------------------------------------------------");
@@ -177,11 +191,17 @@ void shell_header(WINDOW *wnd)
 
 }
 
+/**
+ * Print shell prompt
+ */
 void shell_prompt()
 {
     wprintf(&shell_wnd, "> ");
 }
 
+/**
+ * Shell process
+ */
 void shell_process(PROCESS self, PARAM param)
 {
 	int execute_command;
@@ -230,7 +250,9 @@ void shell_process(PROCESS self, PARAM param)
 	}
 }
 
-
+/**
+ * Init shell
+ */
 void init_shell()
 {
 	clear_window(kernel_window);
