@@ -130,6 +130,44 @@ void exception16()
 	fatal_exception(16);
 }
 
+void add_ready_queue_p_timer()
+{
+	p = interrupt_table[TIMER_IRQ];
+	if(p && p->state == STATE_INTR_BLOCKED){
+		/* Add event handler to ready queue */
+		add_ready_queue(p);
+	}
+}
+
+void add_ready_queue_p_com1()
+{
+	if((p = interrupt_table[COM1_IRQ]) == NULL){
+		panic("service_intr_0x64: Spurious interrupt");
+	}
+	if(p->state != STATE_INTR_BLOCKED){
+		panic("service_intr_0x64: No process waiting");
+	}
+
+	/* Add event handler to ready queue */
+	add_ready_queue(p);
+}
+
+void add_ready_queue_p_key()
+{
+	p = interrupt_table[KEYB_IRQ];
+
+	if (p == NULL) {
+		panic ("service_intr_0x61: Spurious interrupt");
+	}
+
+	if (p->state != STATE_INTR_BLOCKED) {
+		panic ("service_intr_0x61: No process waiting");
+	}
+
+	/* Add event handler to ready queue */
+	add_ready_queue (p);
+}
+
 void spurious_int();
 void dummy_spurious_int()
 {
@@ -219,11 +257,12 @@ void dummy_isr_timer ()
 	 * If a process is waiting for this interrupt, then put it back
 	 * to the ready queue.
 	 */
-	p = interrupt_table[TIMER_IRQ];
-	if(p && p->state == STATE_INTR_BLOCKED){
-		/* Add event handler to ready queue */
-		add_ready_queue(p);
-	}
+//	p = interrupt_table[TIMER_IRQ];
+//	if(p && p->state == STATE_INTR_BLOCKED){
+//		/* Add event handler to ready queue */
+//		add_ready_queue(p);
+//	}
+	add_ready_queue_p_timer();
 
 	/* Dispatch new process */
 	active_proc = dispatcher();
@@ -257,7 +296,6 @@ void dummy_isr_timer ()
 }
 
 
-
 /*
  * COM1 ISR
  */
@@ -282,18 +320,22 @@ void dummy_isr_com1 ()
 	asm("pushl %esi");
 	asm("pushl %edi");
 
-	if((p = interrupt_table[COM1_IRQ]) == NULL){
-		panic("service_intr_0x64: Spurious interrupt");
-	}
-	if(p->state != STATE_INTR_BLOCKED){
-		panic("service_intr_0x64: No process waiting");
-	}
+//	if((p = interrupt_table[COM1_IRQ]) == NULL){
+//		panic("service_intr_0x64: Spurious interrupt");
+//	}
+//	if(p->state != STATE_INTR_BLOCKED){
+//		panic("service_intr_0x64: No process waiting");
+//	}
+//
+//	/* Save context pointer ESP to the PCB */
+//	asm("movl %%esp,%0" : "=m" (active_proc->esp) : );
+//
+//	/* Add event handler to ready queue */
+//	add_ready_queue(p);
 
 	/* Save context pointer ESP to the PCB */
 	asm("movl %%esp,%0" : "=m" (active_proc->esp) : );
-
-	/* Add event handler to ready queue */
-	add_ready_queue(p);
+	add_ready_queue_p_com1();
 
 	/* Dispatch new process */
 	active_proc = dispatcher();
@@ -350,18 +392,19 @@ void dummy_isr_keyb()
     /* Save the context pointer ESP to the PCB */
     asm ("movl %%esp,%0" : "=m" (active_proc->esp) : );
 
-    p = interrupt_table[KEYB_IRQ];
-
-    if (p == NULL) {
-    	panic ("service_intr_0x61: Spurious interrupt");
-    }
-
-    if (p->state != STATE_INTR_BLOCKED) {
-    	panic ("service_intr_0x61: No process waiting");
-    }
-
-    /* Add event handler to ready queue */
-    add_ready_queue (p);
+//    p = interrupt_table[KEYB_IRQ];
+//
+//    if (p == NULL) {
+//    	panic ("service_intr_0x61: Spurious interrupt");
+//    }
+//
+//    if (p->state != STATE_INTR_BLOCKED) {
+//    	panic ("service_intr_0x61: No process waiting");
+//    }
+//
+//    /* Add event handler to ready queue */
+//    add_ready_queue (p);
+    add_ready_queue_p_key();
 
     active_proc = dispatcher();
 
