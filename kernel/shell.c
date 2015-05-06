@@ -13,11 +13,6 @@ void run_train(WINDOW *wnd)
 	init_train(wnd);
 }
 
-void start_train_at_speed(char speed)
-{
-	set_speed(speed);
-}
-
 void set_switch_position(char position, char switch_char)
 {
 	set_switch(position, switch_char);
@@ -111,6 +106,9 @@ void run_command(char *buffer, int cmd)
 		wprintf(&shell_wnd, "train               =>   Run train application\n");
 		wprintf(&shell_wnd, "stoptrain           =>   Stop train application\n");
 		wprintf(&shell_wnd, "starttrain          =>   Start train\n");
+		wprintf(&shell_wnd, "slowdown            =>   Slow down train to 2\n");
+		wprintf(&shell_wnd, "accelerate          =>   Accelerate to 5\n");
+		wprintf(&shell_wnd, "starttrain          =>   Start train\n");
 		wprintf(&shell_wnd, "setswitch <n> <R|G> =>   Set switch number n to color R|G\n");
 		wprintf(&shell_wnd, "changedir           =>   Change train's direction\n");
 		wprintf(&shell_wnd, "help                =>   Print list of all commands\n");
@@ -133,6 +131,14 @@ void run_command(char *buffer, int cmd)
 		return;
 	}
 	if(strings_equal(buffer, "starttrain")) {
+		set_speed('5');
+		return;
+	}
+	if(strings_equal(buffer, "slowdown")) {
+		set_speed('2');
+		return;
+	}
+	if(strings_equal(buffer, "accelerate")) {
 		set_speed('5');
 		return;
 	}
@@ -178,10 +184,6 @@ void shell_prompt()
 
 void shell_process(PROCESS self, PARAM param)
 {
-	volatile int flag;
-
-	DISABLE_INTR(flag);
-
 	int execute_command;
 	int number_of_chars;
 	char buffer[80];
@@ -226,7 +228,6 @@ void shell_process(PROCESS self, PARAM param)
 		}
 		run_command(buffer, number_of_chars);
 	}
-	ENABLE_INTR(flag);
 }
 
 
