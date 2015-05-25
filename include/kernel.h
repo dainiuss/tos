@@ -48,6 +48,7 @@ typedef struct {
 } WINDOW;
 
 extern WINDOW* kernel_window;
+extern WINDOW* train_window;
 
 
 void move_cursor(WINDOW* wnd, int x, int y);
@@ -74,12 +75,12 @@ void kprintf(const char* fmt, ...);
 #define MAX_READY_QUEUES	8
 
 
-#define STATE_READY 		0
-#define STATE_SEND_BLOCKED	1
+#define STATE_READY 		    0
+#define STATE_SEND_BLOCKED	    1
 #define STATE_REPLY_BLOCKED 	2
 #define STATE_RECEIVE_BLOCKED	3
 #define STATE_MESSAGE_BLOCKED	4
-#define STATE_INTR_BLOCKED 	5
+#define STATE_INTR_BLOCKED 	    5
 
 
 #define MAGIC_PCB 0x4321dcba
@@ -159,7 +160,7 @@ typedef struct _PORT_DEF {
     PROCESS   owner;             /* Owner of this port */
     PROCESS   blocked_list_head; /* First local blocked process */
     PROCESS   blocked_list_tail; /* Last local blocked process */
-    struct _PORT_DEF *next;            /* Next port */
+    struct _PORT_DEF *next;      /* Next port */
 } PORT_DEF;
 
 

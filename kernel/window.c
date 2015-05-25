@@ -1,37 +1,146 @@
-
 #include <kernel.h>
 
+#define BASE_ADDRESS  0xB8000
+#define SCREEN_WIDTH  80
+#define SCREEN_HEIGHT 25
+
+WORD default_color = 0x0f;
 
 
-
-void move_cursor(WINDOW* wnd, int x, int y)
+void poke_to_screen(int x, int y, WORD ch)
 {
+	MEM_ADDR addr = BASE_ADDRESS + 2 * SCREEN_WIDTH * y + 2 * x;
+	poke_w(addr, ch);
 }
 
 
-void remove_cursor(WINDOW* wnd)
+WORD peek_from_screen(int x, int y)
 {
+	MEM_ADDR addr = BASE_ADDRESS + 2 * SCREEN_WIDTH * y + 2 * x;
+	return peek_w(addr);
+}
+
+void scroll_window(WINDOW *wnd)
+{
+	int x, y;
+	int wx, wy;
+	volatile int flag;
+
+	DISABLE_INTR(flag);
+
+	for(y=0; y < wnd->height - 1; y++){
+		wy = wnd->y + y;
+		for(x=0 ; x < wnd->width; x++){
+			wx = wnd->x + x;
+			WORD ch = peek_from_screen(wx, wy + 1);
+			poke_to_screen(wx, wy, ch);
+		}
+	}
+	wy = wnd->y + wnd->height - 1;
+	for(x=0; x < wnd->width; x++){
+		wx = wnd->x + x;
+		poke_to_screen(wx, wy, 0);
+	}
+	wnd->cursor_x = 0;
+	wnd->cursor_y = wnd->height - 1;
+
+	ENABLE_INTR(flag);
+}
+
+void move_cursor(WINDOW *wnd, int x, int y)
+{
+	assert(x < wnd->width && y < wnd->height);
+	wnd->cursor_x = x;
+	wnd->cursor_y = y;
 }
 
 
-void show_cursor(WINDOW* wnd)
+void remove_cursor(WINDOW *wnd)
 {
+	WORD empty_char = 32;
+	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, empty_char);
 }
 
 
-void clear_window(WINDOW* wnd)
+void show_cursor(WINDOW *wnd)
 {
+	poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y, wnd->cursor_char | (default_color << 8));
 }
 
 
-void output_char(WINDOW* wnd, unsigned char c)
+void clear_window(WINDOW *wnd)
 {
+	int x;
+	int y;
+	int window_x;
+	int window_y;
+	volatile int flag;
+
+	DISABLE_INTR(flag);
+
+	for(x=0; x < wnd->width; x++) {
+		window_x = wnd->x + x;
+		for(y=0; y < wnd->height; y++) {
+			window_y = wnd->y + y;
+			poke_to_screen(window_x, window_y, 0);
+		}
+	}
+	// Reset the cursor
+	wnd->cursor_x = 0;
+	wnd->cursor_y = 0;
+	show_cursor(wnd);
+
+	ENABLE_INTR(flag);
+}
+
+
+void output_char(WINDOW *wnd, unsigned char c)
+{
+	volatile int flag;
+
+	DISABLE_INTR(flag);
+
+	remove_cursor(wnd);
+	switch(c) {
+		case '\n':
+		case 13:
+			wnd->cursor_x = 0;
+			wnd->cursor_y++;
+			break;
+		case '\b':
+			if(wnd->cursor_x == 0 && wnd->cursor_y !=0){
+				wnd->cursor_x = wnd->width - 1;
+				wnd->cursor_y--;
+			}
+			else if(wnd->cursor_x != 0 && wnd->cursor_y !=0) {
+				wnd->cursor_x--;
+			}
+			break;
+		default:
+			poke_to_screen(wnd->x + wnd->cursor_x, wnd->y + wnd->cursor_y,
+						   (short unsigned int) c | (default_color << 8));
+			wnd->cursor_x++;
+			if(wnd->cursor_x == wnd->width){
+				wnd->cursor_x = 0;
+				wnd->cursor_y++;
+			}
+			break;
+	}
+	if(wnd->cursor_y == wnd->height) {
+		scroll_window(wnd);
+	}
+	show_cursor(wnd);
+
+	ENABLE_INTR(flag);
 }
 
 
 
-void output_string(WINDOW* wnd, const char *str)
+void output_string(WINDOW *wnd, const char *str)
 {
+	while(*str != '\0'){
+		output_char(wnd, *str++);
+	}
 }
 
 
@@ -65,21 +174,21 @@ char *printnum(char *b, unsigned int u, int base,
     size = &buf [MAXBUF - 1] - p;
     
     if (size < length && !ladjust) {
-	while (length > size) {
-	    *b++ = padc;
-	    length--;
-	}
+		while (length > size) {
+			*b++ = padc;
+			length--;
+		}
     }
     
     while (++p != &buf [MAXBUF])
 	*b++ = *p;
     
     if (size < length) {
-	/* must be ladjust */
-	while (length > size) {
-	    *b++ = padc;
-	    length--;
-	}
+		/* must be ladjust */
+		while (length > size) {
+			*b++ = padc;
+			length--;
+		}
     }
     return b;
 }
@@ -286,6 +395,9 @@ void wprintf(WINDOW* wnd, const char *fmt, ...)
 
 static WINDOW kernel_window_def = {0, 0, 80, 25, 0, 0, ' '};
 WINDOW* kernel_window = &kernel_window_def;
+
+static WINDOW train_window_def = {0, 0, 80, 8, 0, 0, ' '};
+WINDOW* train_window = &train_window_def;
 
 
 void kprintf(const char *fmt, ...)

@@ -4,6 +4,8 @@
 
 void kernel_main()
 {
+	//clear_window(kernel_window);
+
     // this turns off the VGA hardware cursor
     // otherwise we get an annoying, meaningless,
     // blinking cursor in the middle of our screen
