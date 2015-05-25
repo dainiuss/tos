@@ -380,7 +380,7 @@ void run_train_configuration_no_zamboni(int position_code)
 			if(status14=='1'){
 				wprintf(train_window, "On track 14, Slow down\n");
 				wprintf(train_window, "Sleeping\n");
-				for(i=0; i<4; i++){
+				for(i=0; i<5; i++){
 					wprintf(train_window, "%d,", i);
 					sleep(long_sleep_tick);
 				}
@@ -691,7 +691,7 @@ void run_train_configuration_with_zamboni(int position_code, int zamboni_positio
 
 						speed = '2';
 						set_speed(speed);
-						for(i=0; i<3; i++){
+						for(i=0; i<5; i++){
 							wprintf(train_window, "%d,", i);
 							sleep(long_sleep_tick);
 						}

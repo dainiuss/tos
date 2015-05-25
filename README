@@ -1,5 +1,0 @@
-
-Source of the shell is in kernel/shell.c
-Source of the train is in kernel/train.c
-
-Added strings_equal() function to kernel/stdlib.c - used in shell.c
